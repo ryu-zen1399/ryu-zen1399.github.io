@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武器商人・軍需産業に関する学術研究ノート</title>
+    <style>
+        :root {
+            --bg: #f8f6f1;
+            --surface: #fffef9;
+            --border: #d8d0c0;
+            --accent: #3a2a10;
+            --accent2: #7a4a1a;
+            --text: #2c2010;
+            --muted: #7a6a50;
+            --strong-color: #8b1a1a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Hiragino Mincho ProN", "游明朝", "Yu Mincho", Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.85;
+            font-size: 15px;
+        }
+        #layout { display: flex; min-height: 100vh; }
+        #sidebar {
+            width: 260px;
+            min-width: 260px;
+            background: var(--accent);
+            color: #e8d8b0;
+            padding: 30px 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+        }
+        #sidebar .toc-label {
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #a09070;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #5a4a2a;
+        }
+        #sidebar ul { list-style: none; padding: 0; }
+        #sidebar ul li { margin: 4px 0; }
+        #sidebar ul li a {
+            color: #c8b880;
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 1.5;
+            display: block;
+            padding: 3px 6px;
+            border-radius: 3px;
+            transition: background 0.15s;
+        }
+        #sidebar ul li a:hover { background: rgba(255,255,255,0.1); color: #f0e0b0; }
+        #sidebar ul li.h3-item a { padding-left: 18px; font-size: 11px; color: #a09070; }
+        #main {
+            flex: 1;
+            max-width: 860px;
+            padding: 60px 60px 80px 60px;
+            background: var(--surface);
+        }
+        #main > h1:first-child {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+            border-bottom: 3px solid var(--accent2);
+            padding-bottom: 16px;
+            margin-bottom: 8px;
+            letter-spacing: 0.02em;
+        }
+        h2 {
+            font-size: 18px;
+            color: var(--accent);
+            margin-top: 56px;
+            margin-bottom: 18px;
+            padding: 10px 16px;
+            background: linear-gradient(90deg, #f0e8d0, transparent);
+            border-left: 4px solid var(--accent2);
+            font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+        }
+        h3 {
+            font-size: 15px;
+            color: var(--accent2);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+            border-bottom: 1px dashed var(--border);
+            font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+        }
+        p { margin-bottom: 14px; }
+        ul, ol { margin: 10px 0 18px 24px; }
+        li { margin-bottom: 8px; }
+        li p { margin: 0; }
+        strong { color: var(--strong-color); font-weight: 700; }
+        em { font-style: italic; color: #4a3020; }
+        hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0 28px 0;
+            background: var(--surface);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+            font-size: 13px;
+        }
+        thead tr { background: var(--accent); color: #e8d8b0; }
+        th { padding: 11px 14px; text-align: left; font-weight: 600; font-size: 12px; letter-spacing: 0.04em; }
+        td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+        tbody tr:hover { background: #faf5e8; }
+        tbody tr:last-child td { border-bottom: none; }
+        code { background: #f0e8d0; padding: 2px 6px; border-radius: 3px; font-family: "Courier New", monospace; font-size: 12px; color: var(--accent); }
+        #sidebar::-webkit-scrollbar { width: 4px; }
+        #sidebar::-webkit-scrollbar-track { background: transparent; }
+        #sidebar::-webkit-scrollbar-thumb { background: #5a4a2a; border-radius: 2px; }
+    </style>
+</head>
+<body>
+<div id="layout">
+    <nav id="sidebar">
+        <p class="toc-label">目次</p>
+        <ul id="toc-list"></ul>
+    </nav>
+    <main id="main">
+<h1 id="_1">武器商人・軍需産業に関する学術研究ノート</h1>
+<p>シーメンス事件・バジル・ザハロフを起点に、19世紀〜20世紀前半の軍需産業と武器商人をめぐる学術研究の現況を整理したメモ。</p>
+<hr />
+<h2 id="1-engelbrecht-hanighen-merchants-of-death-1934">1. Engelbrecht &amp; Hanighen <em>Merchants of Death</em> (1934) の評価</h2>
+<p>通俗書では今でも頻繁に引用されるが、<strong>学術文献としては怪しい</strong>。当時の反軍需プロパガンダ運動の "症候" として読むべき書物。</p>
+<ul>
+<li>1934年刊。同年並行で Fenner Brockway <em>The Bloody Traffic</em> (1933)、George Seldes <em>Iron Blood and Profits</em> (1934) などが続いた <strong>「死の商人」キャンペーン本の代表格</strong>。</li>
+<li><strong>米Nye委員会（1934-36）</strong> はこの種の言説を背景に発足、93回の公聴会・200人以上の証人尋問を行ったが <strong>「軍需産業による戦争陰謀」の確たる証拠は出ず</strong>、結論として「死の商人」陰謀史観は <strong>歴史学的に否定</strong> されている。</li>
+<li>一次史料の脚注をほとんど付けず、伝聞・新聞記事・推論をつなげた構成。<strong>事実関係に正しい情報も混じるが、それを陰謀史観のフレームに押し込んで読ませる構造</strong>。</li>
+<li>現代の専門家は <strong>「1930年代の反戦・反資本主義言説の歴史的史料」として読むのが正確</strong> で、武器産業史の二次文献としては引用しない。</li>
+<li>復刊しているのは主に <strong>Mises Institute（リバタリアン系）や Routledge Library Editions（古典シリーズ）</strong> で、いずれも「歴史的アーティファクト」扱い。</li>
+</ul>
+<hr />
+<h2 id="2">2. バジル・ザハロフ個人の伝記研究</h2>
+<p>ザハロフ単体の伝記は <strong>3段階</strong> で評価すべき。</p>
+<table>
+<thead>
+<tr>
+<th>著者・刊年</th>
+<th>種別</th>
+<th>評価</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roger Mennevée (1928, フランス語)</td>
+<td>ジャーナリスト</td>
+<td>最初期。伝説形成期の典型</td>
+</tr>
+<tr>
+<td>Richard Lewinsohn <em>The Mystery Man of Europe</em> (1929)</td>
+<td>ジャーナリスト</td>
+<td>「神秘の男」像を世に固定。神話寄り</td>
+</tr>
+<tr>
+<td>Donald McCormick <em>Pedlar of Death</em> (1965)</td>
+<td>通俗作家</td>
+<td>大衆向け、一次史料利用は限定的</td>
+</tr>
+<tr>
+<td><strong>Anthony Allfrey <em>Man of Arms: The Life and Legend of Sir Basil Zaharoff</em> (Weidenfeld &amp; Nicolson, 1989)</strong></td>
+<td>半学術</td>
+<td><strong>初の本格的な archival 伝記</strong>。Hankey日記、Lloyd George文書、ケンブリッジ大Vickers Archiveを利用。神話と実像の腑分けを試みた標準的著作</td>
+</tr>
+</tbody>
+</table>
+<p>加えて、<strong>学術論文</strong> としては：</p>
+<ul>
+<li><strong>Calder, "Sir Basil Zaharoff and Sir Vincent Caillard as Instruments of British Policy towards Greece and the Ottoman Empire during the Asquith and Lloyd George Administrations, 1915-8"</strong>, <em>International History Review</em> 34:4 (2012) — ザハロフを <strong>第一次大戦期の英国対ギリシャ・対オスマン政策の媒介者</strong> として一次史料で扱った査読論文。</li>
+</ul>
+<p>ただし、ザハロフ個人だけで研究を成り立たせるのは難しく、現代のメインストリームは下記の "産業・国家・国際関係" のフレームの方。</p>
+<hr />
+<h2 id="3-19-5">3. 19世紀軍需企業／武器商人の学術研究 — 主要5冊の議論</h2>
+<h3 id="3-1-clive-trebilcock-the-vickers-brothers-armaments-and-enterprise-1854-1914-europa-publications-1977">3-1. Clive Trebilcock <em>The Vickers Brothers: Armaments and Enterprise, 1854-1914</em> (Europa Publications, 1977)</h3>
+<p><strong>位置づけ</strong>：戦後初の本格的なヴィッカース社史研究。<strong>現代の軍需企業研究の出発点</strong> とされる古典。</p>
+<p><strong>主張・発見</strong>：<br />
+- 創業者 T.E.ヴィッカース／アルバート・ヴィッカース兄弟を <strong>「優れた技術指導力＋鋭利な商業判断」を兼ね備えた経営者</strong> として描き、武器商人＝悪徳という単純な像を退ける。<br />
+- 注目に値するのは <strong>「軍需企業は戦争を望んだ」というMerchants of Death テーゼへの実証的反証</strong>：第一次大戦は <strong>海外市場の喪失と国家統制</strong> によりヴィッカース社にとって <strong>大きな損失</strong> だった。利益面でも企業家精神からも、戦争は望ましくなかった。<br />
+- 武器商社を「軍国主義の主体」ではなく「<strong>市場・技術・国家政策の交差点に立つ複合的企業体</strong>」として再定位。</p>
+<p>→ それまでの「死の商人」フレームを <strong>企業史学の方法で換骨奪胎した</strong> 最初の主要研究。</p>
+<hr />
+<h3 id="3-2-william-h-mcneill-the-pursuit-of-power-technology-armed-force-and-society-since-ad-1000-chicago-up-1982">3-2. William H. McNeill <em>The Pursuit of Power: Technology, Armed Force, and Society since A.D. 1000</em> (Chicago UP, 1982)</h3>
+<p><strong>位置づけ</strong>：千年単位のグランド・シンセシス。世界史的に軍事・技術・社会の三位を統合した <strong>理論的フレームワークの古典</strong>。</p>
+<p><strong>主張・発見</strong>：<br />
+- <strong>中心テーゼ</strong>：11世紀の <strong>商業革命（commercial transformation）</strong> 以後、軍事活動は <strong>「支配者の命令」だけでなく「市場の力」にも応答するように</strong> なった。これが千年スパンの基底動因。<br />
+- 19世紀後半を扱う第7-8章「<strong>戦争の初期工業化（1840-84）</strong>」「<strong>強化された軍産相互作用（1884-1914）</strong>」が、後続研究の概念整理の土台となる。<br />
+- McNeill の独自貢献は <strong>「軍産複合体」を1950年代以降の現象ではなく、1880年代から始まる長期構造として位置づけた</strong> こと。<br />
+- アプローチは archive ベースというより <strong>理論・俯瞰</strong>。後続の archive 派（Trebilcock、Grant、Spear）の認識枠組みを提供。</p>
+<hr />
+<h3 id="3-3-jonathan-a-grant-rulers-guns-and-money-the-global-arms-trade-in-the-age-of-imperialism-harvard-up-2007">3-3. Jonathan A. Grant <em>Rulers, Guns, and Money: The Global Arms Trade in the Age of Imperialism</em> (Harvard UP, 2007)</h3>
+<p><strong>位置づけ</strong>：1870-1914年の <strong>グローバルな</strong> 武器貿易を一冊で扱う、<strong>現代研究の代表作</strong>。</p>
+<p><strong>主張・発見</strong>：<br />
+- <strong>核心的テーゼ</strong>：武器商社・軍需企業は <strong>「本国政府の道具」ではなかった</strong>。むしろ自社の経済利益を追求し、本国に対して「武器輸出は国益・国威につながる」と説得して回っていた。<br />
+- <strong>企業の自律性は本国外交利益と頻繁に衝突した</strong>。Grant の archive 発見は反直感的：<strong>国営兵器廠ですら、本国の "敵国" にも武器を売っていた</strong>。<br />
+- <strong>武器輸出は被植民地・非欧米国家にとって "帝国主義への抵抗手段" にもなった</strong>。<br />
+  - <strong>エチオピア皇帝メネリク2世</strong>：イタリアから購入した武器で、後に侵攻してきた当のイタリアを撃破（1896 アドワの戦い）。<br />
+  - <strong>アルゼンチン-チリの海軍軍拡レース（1890年代）</strong>：両国が英ヴィッカース・アームストロングから戦艦を購入、英国側は「いずれの側にも肩入れしない」として両建てで売却。<br />
+- 「死の商人」陰謀史観 → 「<strong>自律的な経済アクターとしての軍需企業</strong>」へと議論を完全に再定位。</p>
+<p>→ 現代軍需研究の標準的な参照点。グローバル視点と archive 主義の結合。</p>
+<hr />
+<h3 id="3-4-priya-satia-empire-of-guns-the-violent-making-of-the-industrial-revolution-penguin-2018">3-4. Priya Satia <em>Empire of Guns: The Violent Making of the Industrial Revolution</em> (Penguin, 2018)</h3>
+<p><strong>位置づけ</strong>：18世紀後半〜19世紀初頭の <strong>より早い時期</strong> を扱い、軍需と産業革命の関係を捉え直した話題作。AHA Bentley Prize (2019) 等を受賞。</p>
+<p><strong>主張・発見</strong>：<br />
+- <strong>挑発的中心テーゼ</strong>：イギリス産業革命の中核は <strong>マンチェスターの綿工業ではなくバーミンガムの銃製造業</strong> だった。<strong>戦争こそが産業革命の駆動力</strong>。<br />
+- 主人公として <strong>クェーカー（平和主義教派）の銃製造業者 Samuel Galton</strong> を取り上げ、彼が「産業経済全体が国家の戦争事業に組み込まれている以上、自分一人だけ手を引いても意味がない」と教派から弾劾された逸話を分析。<br />
+- <strong>「軍需＝特殊な悪」ではなく「経済全体が軍事と不可分に絡まっている」</strong> という見方を、産業革命期の英国に投げ返した。<br />
+- <strong>批判的反応</strong>：英国史家 Emma Griffin らが「戦争が産業革命を引き起こしたという因果は強すぎる。スイスのように戦争なしに工業化した国もある」と反論。<br />
+- ただし <strong>「軍需を例外的な悪行ではなく経済の通常運転として捉え直す」</strong> という視座転換は広く共有されつつある。</p>
+<hr />
+<h3 id="3-5-joanna-spear-the-business-of-armaments-armstrongs-vickers-and-the-international-arms-trade-1855-1955-cambridge-up-2023">3-5. Joanna Spear <em>The Business of Armaments: Armstrongs, Vickers and the International Arms Trade, 1855-1955</em> (Cambridge UP, 2023)</h3>
+<p><strong>位置づけ</strong>：英軍需研究の <strong>現時点の決定版</strong>。アームストロング社とヴィッカース社の100年を、外交史 × 経営史で並列分析。</p>
+<p><strong>主張・発見</strong>：<br />
+- <strong>明示的に「英国に "軍産複合体" は存在しなかった」と結論</strong>（"the argument for a British MIC fails"）。<br />
+- <strong>論拠</strong>：<br />
+  - 19世紀末から20世紀前半を通じ、<strong>英国政府は laissez-faire と階級的偏見（"trade" に従事する者への蔑視）</strong> から、両社に対し常に距離を保った。むしろ両社の存続には冷淡だった。<br />
+  - 両社は <strong>国家との交渉で "関係性パワー（relational power）" を時に発揮したものの、得たいものを得られないことが圧倒的に多かった</strong>。<br />
+  - 武器予算増額の働きかけ → <strong>失敗</strong>。自社の不正調査をやめさせる動き → <strong>失敗</strong>。アジェンダ設定能力やイデオロギー的影響力は <strong>皆無</strong>。<br />
+- つまり <strong>「巨大軍需企業が国家を操っていた」という Engelbrecht-Hanighen 的な像は、英国の場合まったく実証されない</strong>。両社はしばしば国家政策の <strong>被害者</strong> ですらあった。<br />
+- これが現時点で <strong>「死の商人」テーゼに対する最も精緻な実証的反論</strong>。</p>
+<hr />
+<h3 id="3-6-5">3-6. 主要5冊の論点を一望にすると</h3>
+<table>
+<thead>
+<tr>
+<th>著作</th>
+<th>軸</th>
+<th>「死の商人」テーゼへの態度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trebilcock 1977</td>
+<td>企業内部・戦時損失</td>
+<td><strong>企業の経済合理性から否定</strong></td>
+</tr>
+<tr>
+<td>McNeill 1982</td>
+<td>千年スパンの構造</td>
+<td>軍産複合は構造的現象、悪徳ではない</td>
+</tr>
+<tr>
+<td>Grant 2007</td>
+<td>企業 vs 本国政府</td>
+<td><strong>企業は本国の道具ではなく自律的アクター</strong></td>
+</tr>
+<tr>
+<td>Satia 2018</td>
+<td>経済全体の共犯性</td>
+<td>武器産業を例外化する見方そのものを否定</td>
+</tr>
+<tr>
+<td>Spear 2023</td>
+<td>国家＝企業関係</td>
+<td><strong>英国MICは "存在しなかった"</strong> と決定的に否定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>共通方向</strong>：1934年の Engelbrecht-Hanighen 的な「邪悪な武器商人カルテルが国家を操って戦争を起こす」像は、<strong>現代の archive ベース軍需史では完全に過去のもの</strong>。代わりに、<strong>企業・国家・市場・国際関係のせめぎ合いとしての武器産業</strong> という、より複雑で入り組んだ像が共有されている。</p>
+<p>ザハロフ個人もこの新しいパラダイムでは <strong>「神秘の黒幕」ではなく "企業の有能な販売エージェントの一人"</strong> として相対化される。Allfrey 1989 がこの相対化のザハロフ伝記版。</p>
+<hr />
+<h2 id="4">4. 補助文献</h2>
+<table>
+<thead>
+<tr>
+<th>著者・刊年</th>
+<th>書名</th>
+<th>性格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R. P. T. Davenport-Hines (Cambridge UP, 1984)</td>
+<td><em>Dudley Docker: The Life and Times of a Trade Warrior</em></td>
+<td>ヴィッカース取締役・産業ロビイスト Docker を通じた英軍需企業政治史。19世紀末以降の英国産業衰退論と接続</td>
+</tr>
+<tr>
+<td>David Edgerton (2005)</td>
+<td><em>Warfare State: Britain 1920-1970</em></td>
+<td>戦間期英国の軍産関係を再評価</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. 日本における軍需・武器商人研究の状況</h2>
+<p>率直に言うと、<strong>「日本における海外武器商人・軍需企業ブローカー史」を真正面から扱う研究者はほぼ空白に近い</strong> のが現状。隣接分野に断片的に出てくる、というのが実態。</p>
+<h3 id="5-1">5-1. 大正期政治史の文脈で</h3>
+<ul>
+<li><strong>奈良岡聰智</strong>（京都大学法学研究科教授）：日本近代政治外交史。『対華二十一ヵ条要求とは何だったのか』（名古屋大学出版会, 2015、サントリー学芸賞）。シーメンス事件は加藤高明・大正政変・第一次大戦期外交の文脈で扱う。<strong>事件の "周辺政治" を最も精緻に追っている人</strong> だが、武器商人・軍需企業そのものは主題ではない。</li>
+<li><strong>伊藤之雄</strong>（京都大学名誉教授）：『山県有朋』『元老』など。シーメンス事件を山県・元老政治の文脈で扱う。</li>
+<li><strong>永井和</strong>（京都大学）：「西園寺公望はいかにして最後の元老となったのか」など。</li>
+</ul>
+<h3 id="5-2">5-2. 海軍史・艦艇史の文脈で</h3>
+<ul>
+<li><strong>戸高一成</strong>（呉市海事歴史科学館元館長、海軍史料の第一人者）：『海軍と日本』『海軍反省会』編纂など。ヴィッカース・三井ルートにも触れる。</li>
+<li><strong>黒野耐</strong>（防衛研究所系）：軍部・統帥史。</li>
+<li>軍艦研究の本吉隆・新見志郎・小高正稔などの系統は、艦艇発注の経緯を扱う中で当然ヴィッカース・三井に触れるが、<strong>武器商人個人の研究</strong> ではない。</li>
+</ul>
+<h3 id="5-3">5-3. 商社・財閥史の文脈で</h3>
+<ul>
+<li>三井物産・三井財閥史研究の系統（<strong>安岡重明、宮本又郎、武田晴人</strong> など経営史学者）：岩原謙三や三井物産の対外武器仲介は社史の一節として扱う。</li>
+<li>経営史学会・三井文庫研究紀要などにヴィッカース取引の記述が散見される。</li>
+</ul>
+<h3 id="5-4">5-4. 武器商人個人で取り上げられるのは</h3>
+<ul>
+<li>日本語Wikipediaに項目がある国内の "武器商人" は <strong>大倉喜八郎</strong>（大倉財閥創始者、戊辰戦争〜西南戦争で武器調達）など限定的。</li>
+<li>海外の武器商人を学術的に扱うものは管見の限り見当たらず、ザハロフはほぼ通俗書（"死の商人" 系の翻訳書）でしか扱われていない。</li>
+</ul>
+<hr />
+<h2 id="6">6. 「シーメンス事件＋ザハロフ周辺」を深堀りするなら</h2>
+<p>最も応えてくれそうな順：</p>
+<ol>
+<li><strong>Joanna Spear <em>The Business of Armaments</em> (2023)</strong> — ヴィッカース・アームストロングの対外取引を一次史料で精査。対日案件の章があれば最有力</li>
+<li><strong>Anthony Allfrey <em>Man of Arms</em> (1989)</strong> — ザハロフ伝記の archival 系</li>
+<li><strong>Jonathan A. Grant <em>Rulers, Guns, and Money</em> (2007)</strong> — グローバル文脈の現代標準</li>
+<li><strong>奈良岡聰智</strong> の関連論文 — 大正政治の側からの最良の和文研究</li>
+<li><strong>三井文庫研究論集</strong> の岩原謙三関連記事 — 三井物産側の窓口</li>
+</ol>
+<p>このあたりを当たれば、<strong>通俗的「死の商人」フレームを離れた、もう少し堅い記述</strong> に到達できる。</p>
+<hr />
+<h2 id="_2">出典</h2>
+<ul>
+<li><a href="https://www.taylorfrancis.com/books/mono/10.4324/9781003104704/merchants-death-engelbrecht-hanighen">Engelbrecht / Hanighen <em>Merchants of Death</em> (Routledge再刊)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Merchants_of_death">Merchants of death - Wikipedia</a></li>
+<li><a href="https://www.abebooks.com/9780297795322/Man-Arms-Life-Legend-Sir-0297795325/plp">Anthony Allfrey <em>Man of Arms</em> (1989) - AbeBooks</a></li>
+<li><a href="https://www.tandfonline.com/doi/abs/10.1080/07075332.2012.690200">Calder, "Sir Basil Zaharoff and Sir Vincent Caillard..." International History Review 2012</a></li>
+<li><a href="https://www.cambridge.org/core/journals/business-history-review/article/abs/vickers-brothers-armaments-and-enterprise-18541914-by-clive-tiebilcock-london-europe-publications-1977-p-xl-181-1295/87FCC93D153A5797B018E6A510165FD1">Trebilcock <em>The Vickers Brothers</em> (1977) 書評</a></li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/P/bo5975947.html">McNeill <em>The Pursuit of Power</em> (Chicago UP, 1982)</a></li>
+<li><a href="https://www.hup.harvard.edu/books/9780674024427">Grant <em>Rulers, Guns, and Money</em> (Harvard UP, 2007)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Empire_of_Guns:_The_Violent_Making_of_the_Industrial_Revolution">Satia <em>Empire of Guns</em> (Penguin, 2018)</a></li>
+<li><a href="https://www.cambridge.org/core/books/business-of-armaments/B99B897EAC3B9958684487E2BD70A455">Spear <em>The Business of Armaments</em> (Cambridge UP, 2023)</a></li>
+<li><a href="https://www.cambridge.org/core/books/abs/business-of-armaments/conclusions/852F2223CDDB233F83BE336448F852B2">Spear, Conclusions chapter</a></li>
+<li><a href="https://www.cambridge.org/core/journals/albion/article/abs/rpt-davenporthines-dudley-docker-the-life-and-times-of-a-trade-warrior-new-york-cambridge-university-press-1984-pp-xii-295-4450/BA58E784E30E586FE999A277C78BF83D">Davenport-Hines <em>Dudley Docker</em> (Cambridge UP, 1984) 書評</a></li>
+<li><a href="https://origins.osu.edu/article/merchants-death-international-traffic-arms">Origins (Ohio State): "Merchants of Death": The International Traffic in Arms</a></li>
+<li><a href="https://kdb.iimc.kyoto-u.ac.jp/profile/ja.63f27f1383be4c51.html">奈良岡聰智 - 京都大学教育研究活動DB</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E5%A5%88%E8%89%AF%E5%B2%A1%E8%81%B0%E6%99%BA">奈良岡聰智 - Wikipedia</a></li>
+</ul>
+<hr />
+<h2 id="7-wwi">7. ヴィッカーズ社 ── 経営者列伝とWWI前史</h2>
+<h3 id="7-1">7-1. 主要経営者の人物像</h3>
+<h4 id="1833-1915">トーマス・エドワード・ヴィッカーズ（1833-1915）── 「大佐トム」</h4>
+<p>会長在任：1873〜1909年。通称「Colonel Tom（大佐トム）」はハラムシャー・ライフル義勇軍への生涯にわたる関与に由来する。</p>
+<p>21歳のとき、ライン川沿いのノイヴィート（ドイツ）に留学して製鉄技術を習得。帰国直後から工場の技術部門を任され、持ち帰ったドイツの「リーペ鋳型法」──溶鋼でも砂型が溶けない混合物の配合法──を導入して「砂の焼き付き問題」を解決した。1864年には<strong>鉄道タイヤ用二重圧延機</strong>を自ら発明し、1867年の新工場設置後も長年現役稼働した。1870年代からオープンハース製鋼法を採用し坩堝鋼製造から転換。1907年、鉄鋼生産への貢献でホワード五年賞受賞。</p>
+<p>ハラムシャー義勇軍では最初期から参加し、大尉→少佐→名誉大佐。1892年に義勇士官勲章を即受章。シェフィールドのマスター・カトラー（1872-73）、治安判事、C.B.勲章（1898年）も歴任した地域名士。息子ダグラスに画家ジョン・シンガー・サージェントで肖像を描かせたことからも文化的な関心の高さがうかがえる。1860年に最初の妻フランセス・メアリー・ダグラスと結婚、死別後1875年に再婚。82歳でロンドン死去、ゴールダーズ・グリーン火葬。</p>
+<p>歴史家クライヴ・トレビルコックは「気質的には専制君主だが、助言を拒まず権限委譲も辞さない」と評し、技術と商業の双方を兼備した実業家像を描き出している。</p>
+<hr />
+<h4 id="1838-1919">アルバート・ヴィッカーズ（1838-1919）── コスモポリタンな営業の天才</h4>
+<p>会長在任：1909〜1918年。トムの弟。兄が技術・生産の人であったのに対し、アルバートは「営業・人材登用」の天才と評された。</p>
+<p>教育地はドイツのハーメルン（Hameln-on-the-Weser）──「ハーメルンの笛吹き男」の伝説で名高いヴェーザー川の町。1854〜57年にボストン駐在所で北米の商売を学んだ。最初の妻<strong>ヘレン・ホートン・ゲイジはボストン出身</strong>で、駐在時代に出会ったと見られる。57年に会社の財政危機でボストン事務所が閉鎖されて帰国。</p>
+<p>1883年、アメリカ人発明家ハイラム・マキシムが「自動装填・連射砲」の試作品を持ち込むと、アルバートはただちに資金を出して1884年にマキシム銃会社を設立（会長はアルバート自身）。1896年8月、ロンドン郊外ピナーでペルシャ国王の外交顧問・清朝大臣<strong>李鴻章一行にマキシム砲のデモンストレーション</strong>を実施。マキシム自身の記録によれば「直径45センチのアッシュの木を数秒で切り倒した」現物実演だった（現存写真がブリストル大学のHPC資料に所収）。</p>
+<p>1901年ロンドン国勢調査では、チェルシーの邸宅に<strong>11人の使用人</strong>を抱えた暮らしぶり。スペイン海軍功労大十字章・日本旭日章の二カ国受章は対外軍艦販売の成果を反映している。80歳の誕生日に会長辞任（1918年）、翌1919年にイーストボーン（サセックス）で死去。</p>
+<hr />
+<h4 id="1861-1937">ダグラス・ヴィッカーズ（1861-1937）── 国会議員を兼ねた次世代</h4>
+<p>会長在任：1918〜1926年。トムの息子。叔父アルバートの後任。1918年の総選挙でシェフィールド・ハラム選挙区の保守党議員に当選し1922年まで議席を保有した。妻の兄が第8代チェットワインド子爵で上流社会と婚姻関係を持つ。冶金科学への学術的貢献と結核研究支援が記録されている。息子2人が若くして急逝（28歳・37歳）。1937年メイフェアで死去。</p>
+<hr />
+<h4 id="1866-1931">サー・トレヴァー・ドーソン（1866-1931）── 帝国主義の投機師</h4>
+<p>専務取締役在任：1906〜1931年。海軍士官出身の「プロ経営者」として外部からスカウトされた人物。ポーツマス・グリニッジ・ウーリッジ・魚雷学校と当時取り得る最上位の軍事技術教育を全て受けた秀才で、1896年にヴィッカーズへ転職し10年で専務に上り詰めた。</p>
+<p>政治的には「<strong>筋金入りの帝国主義者</strong>」。1916年に「ロンドン帝国主義者」圧力団体を自ら設立（後に「英国連邦同盟」へ発展）。</p>
+<p>最大のスキャンダルは<strong>「ドープ事件」</strong>（1915-18年）：議員兼投機師グラント・モーデンと組んで英国セルロース化学製造会社を設立し、元値6ペンスの株を不正手段で£14 10s（約580倍）まで吊り上げた典型的な戦時株価操作。1918年に議会特別委員会・1919年にサムナー卿公式調査委員会の調査を受けた。1920年の法廷では裁判官に「ドーソンの証言は信用できない」と公言された。1917年新年叙勲で貴族予定だったが直前でリストから削除。1920年に準男爵（バロネット）は入手している。エルストリー（ハートフォードシャー）のエッジウェアベリー・ハウスに田舎邸宅を構え、1931年に心臓発作で急死。</p>
+<hr />
+<h4 id="1856-1930">サー・ヴィンセント・カイヤード（1856-1930）── 「諜報・外交・音楽・義妹婚」</h4>
+<p>財務取締役在任：1906〜1927年。イートン＋王立陸軍士官学校（ウーリッジ）卒の王立工兵隊将校として、バルカン半島での境界確定委員会・エジプト遠征（1882年）・レヴァント諜報活動を経験。1883年からコンスタンティノープルでオスマン帝国公債管理委員会のイギリス代表を務め、絹・塩・葡萄栽培産業の再建と鉄道建設を主導して1896年にナイト叙爵。1898年にヴィッカーズ取締役に転じ、対外事業全般を統括するとともに英国政府の非公式な諜報パイプとして機能した。</p>
+<p>私生活の意外な側面として：(1)自分の義妹（継妹）エリザ・ハナムと結婚（1881年）、(2)ウィリアム・ブレイクの「無垢の歌」に作曲したアマチュア作曲家、(3)自宅にパイプオルガンを設置、(4)妻エリザは第一次大戦中に自宅の「大部分」を赤十字病院として開放しOBE受章。1930年にパリで手術後に肺炎で死去。後妻ゾイはその後降霊術にのめり込み、「コミュニグラフ（機械式ウィジャ盤）」を通じカイヤードの霊と交信したと主張。「霊のメッセージ」を1934年に『愛の新概念』として出版した。</p>
+<hr />
+<h4 id="1879-1939">ヴィンセント・カートライト・ヴィッカーズ（1879-1939）── 「イングランド銀行総裁代理＋絵本作家」</h4>
+<p>取締役兼イングランド銀行総裁代理（1910〜1919年）。アルバートの息子、イートン＋マグダレン・カレッジ（オックスフォード）卒。<strong>イングランド銀行総裁代理という重職に就いていた時期に、ユーモラスな児童詩集『ザ・グーグル・ブック』を自ら書いて挿絵も描いて出版した。</strong> 1926年に「金本位制と戦う」とイングランド銀行総裁に直接宣言して辞任。その後ヴィッカーズ取締役も辞し、生涯の残りを通貨制度改革の啓蒙活動に費やして1939年に死去。</p>
+<hr />
+<h3 id="7-2-wwi">7-2. 会社史の骨格（〜WWI）</h3>
+<p><strong>第一段階：工具鋼の輸出王（1854〜1887年）</strong></p>
+<table>
+<thead>
+<tr>
+<th>年</th>
+<th>出来事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1828</td>
+<td>エドワード・ヴィッカーズと義父ジョージ・ネイラーがシェフィールドに鉄鋼会社設立</td>
+</tr>
+<tr>
+<td>1854</td>
+<td>トム・アルバート兄弟が入社。トムはドイツのリーペ鋳型法を導入</td>
+</tr>
+<tr>
+<td>1863〜64</td>
+<td>リバー・ドン新工場建設（最終的に20→60エーカーへ拡大）</td>
+</tr>
+<tr>
+<td>1864</td>
+<td>トムが鉄道タイヤ用二重圧延機を発明</td>
+</tr>
+<tr>
+<td>1867</td>
+<td>株式会社化（ヴィッカーズ・サンズ社）。トムが会長兼専務取締役</td>
+</tr>
+<tr>
+<td>1870年代</td>
+<td>オープンハース平炉法を導入。米国向け高品質工具鋼・薄板鋼輸出で成長</td>
+</tr>
+<tr>
+<td>1880年代前半</td>
+<td>アメリカ市場での工具鋼需要が急落 → 多角化の岐路へ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第二段階：兵器産業への転換（1887〜1897年）</strong></p>
+<p>1887年の株主総会が£150万（現在換算で約173億円相当）の増資を承認し、大規模兵器製造への多角化を決議した。この段階でアルバートが1884年に個人資金で設立したマキシム銃会社（後にノルデンフェルト社と合併してマキシム・ノルデンフェルト社）が既に軌道に乗りつつあった。1888年に政府から砲兵器一式の製造受注を初めて受諾──部品供給者から「完成兵器メーカー」への転換点。</p>
+<p>マキシム・ノルデンフェルト社の営業マンだったバジル・ザハロフは、1888年の合併を経て1897年にヴィッカーズがマキシム・ノルデンフェルト社を買収したことでヴィッカーズのセールスマンとなり、以後1927年まで活動する。</p>
+<p><strong>第三段階：総合兵器企業への飛躍（1897〜1914年）</strong></p>
+<p>1897年に二件の買収を同時実行：</p>
+<table>
+<thead>
+<tr>
+<th>買収対象</th>
+<th>価格</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>マキシム・ノルデンフェルト社</td>
+<td>£130万</td>
+<td>機関銃・陸上兵器の完全内製化</td>
+</tr>
+<tr>
+<td>バロー造船所（Naval Construction &amp; Armaments Co）</td>
+<td>£42.5万（格安）</td>
+<td>軍艦建造能力の取得</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>1901年</strong> ── 英海軍初の潜水艦「ホーランド1号」をバロー造船所で進水</li>
+<li><strong>1899〜1902年</strong> ── 日本海軍の戦艦「三笠」（受注額£88万）をバロー造船所で建造。1905年の日本海海戦で東郷平八郎の旗艦として活躍しロシアのバルチック艦隊を撃破</li>
+<li><strong>1902年</strong> ── クライド川のジョン・ブラウン造船所の持分取得</li>
+<li><strong>1911年</strong> ── 魚雷メーカー・ホワイトヘッド社の支配権取得、航空部門設立</li>
+<li><strong>1913年</strong> ── 日本海軍の「金剛」型巡洋戦艦をバロー造船所で建造（英国が建造した最後の外国向け主力艦。契約には「技術の最大限移転」義務が盛り込まれていた）</li>
+</ul>
+<p>この時点でヴィッカーズは鋼鉄・機関銃・大砲・装甲板・軍艦・潜水艦・魚雷・自動車（ウォルズリー）・航空機を手がける垂直統合型の軍需複合体となっていた。</p>
+<hr />
+<h2 id="8-wwi">8. アームストロング社 ── 経営者列伝とWWI前史</h2>
+<h3 id="8-1">8-1. 主要経営者の人物像（創業者〜第一次大戦前）</h3>
+<h4 id="1810-1900">ウィリアム・ジョージ・アームストロング（1810-1900）── 法律家・発明家・男爵</h4>
+<p>1810年ニューカッスルの穀物商（後に市長）の息子として生まれた。子供時代から機械の模倣品を作るのが得意で、「水に取り憑かれている（water on the brain）」と家族に揶揄われた。父の意向で弁護士の道へ進んだが、<strong>転機は趣味の釣り</strong>だった。ディー川で釣りをしていたとき、水車が大理石採掘場を動かしているのを見て閃き、1846年に弁護士業を完全に辞めて工学へ転身した。</p>
+<p>1847年にエルズウィック工場を設立。クリミア戦争（1854-56年）の報道を読んで「面白い工学的問題として」ライフル式後装砲の改良に着手し、1858年に<strong>アームストロング砲の特許を政府に無償献上</strong>。しかし1863年、英陸軍省が前装砲に回帰してアームストロング砲を不採用とし、以後輸出市場に活路を求めることになった。</p>
+<p>「戦争を煽ったり人類の利益を損なうとは思っていない。手段を供給する私たちではなく、それを使う者が正当な使用に責任を負う」──この発言は軍需産業倫理の議論で繰り返し引用されている。劇作家ジョージ・バーナード・ショーの戯曲『少佐バーバラ』（1905年）の兵器製造業者アンダーシャフトは、アームストロングに着想を得た人物だと広く言われている。</p>
+<p>1863年にノーサンバーランド州ロスバリー近郊に土地を購入、建築家リチャード・ノーマン・ショーを起用して増改築を重ねた邸宅<strong>クレイグサイド</strong>は1880年に<strong>世界初の水力発電電灯</strong>（ジョセフ・スワンの電球使用）で灯された。敷地内には7百万本の樹木・5つの人工湖・50km近い馬車道路が整備された。クレイグサイドには<strong>ペルシャ国王・シャム国王・清国宰相・日本の首相（2名）・ウェールズ皇太子夫妻</strong>が招かれており、「屋根の下に招かれた客人は同時に商売の顧客でもあった」とナショナル・トラストは明記している。</p>
+<p>1863年にジェスモンド・ディーン渓谷を公開緑地として市民に寄贈。1871年に物理科学大学（後のニューカッスル大学アームストロング校）の創設を支援。<strong>1887年、英国史上初めてエンジニアとして貴族（バロン・アームストロング）に列せられた</strong>。1886年にリベラル・ユニオニストとしてニューカッスル選挙区から立候補したが落選。1863年に先立った妻マーガレット（年上・子なし）とともにロスバリーの教会墓地に埋葬された。1900年90歳で死去。</p>
+<hr />
+<h4 id="1831-1915">アンドリュー・ノーブル（1831-1915）── 弾道科学者・会長</h4>
+<p>会長在任：1900〜1915年。スコットランド・グリーノック生まれ。王立工兵隊将校・砲術専門家として1860年にアームストロングにスカウトされ、翌年パートナーとなった。</p>
+<p><strong>弾道科学への貢献</strong>：1862年に「電磁クロノスコープ」を発明（砲弾の加速度を計測）。フレデリック・エイベルとの共同研究で発射初速を1600フィート→2100フィートに向上（エネルギー比+75%）し、この研究がエイベルの<strong>無煙火薬コーダイト開発</strong>（1889年）の基盤となった。1870年王立協会フェロー・1880年王立メダル受章。</p>
+<p>1893年に妻マージャリー・キャンベル（スコットランド系カナダ人・ケベックで出会った）と結婚したが、<strong>マージャリーは101歳まで生きた</strong>。1905年にアーガイル州のアードキングラスを「妻のスコットランドへの郷愁のため」に購入。「自分は別荘のつもりで買ったが、妻と娘の強硬な意見で一家の永住地になった」と語っている。ロバート・ロリマー設計のアードキングラス・ハウスは1906年着工・21ヶ月で完成。気象観測機器と電気記録計を設置した（科学者の習性そのまま）。1915年10月にアードキングラスで84歳で死去。同じ年にトム・ヴィッカーズも没した。</p>
+<hr />
+<h4 id="1834-1913">スチュアート・レンデル（1834-1913）── 「グラッドストンの棺を担いだ兵器会社代理人」</h4>
+<p>ロンドン代理人・副会長。イートン＋オリール・カレッジ（オックスフォード）卒、弁護士資格取得後にアームストロング社のロンドン代理人へ転じた。1880年から自由党議員（ウェールズ・モンゴメリーシャー）として同選挙区80年以上の保守党の牙城を崩した。</p>
+<p><strong>グラッドストン首相との個人的親交</strong>が最大の特徴。首相在任最後の期（1892-94年）に最も近い人物の一人で、娘がグラッドストンの三男ヘンリーと結婚。1898年のグラッドストン国葬（ウェストミンスター寺院）では<strong>皇太子（後のエドワード7世）・ヨーク公（後のジョージ5世）と並んで棺を担いだ</strong>。「兵器会社の代理人でありながらグラッドストン自由党の中枢にいた」という二重性は、アームストロング社が商業的利益と政治的コネクションをどのように一体化させていたかを端的に示す。1913年没。</p>
+<hr />
+<h4 id="1803-1887">ジョセフ・ホワイトワース（1803-1887）── 「精度に取り憑かれた合併相手」</h4>
+<p>マンチェスター出身。初等教育のみだが、スクリュー旋盤を発明したヘンリー・モーズレーの工房で修業した後1832年に独立。<strong>100万分の1インチの精度を達成する計測機</strong>を製作し、1841年に「ホワイトワース・ネジ規格（British Standard Whitworth）」を制定して英国全土のネジ規格を統一した。ホワイトワース・ライフルは南北戦争で名を上げたが英軍には不採用。晩年は25歳以上年下の妻ルイザと再婚。1887年に死去、遺産のほとんどをマンチェスターへの慈善事業（ホワイトワース美術館・クリスティー病院）に残した。アームストロングとは同世代の競争相手だったが、1897年に両社が合併して「サー・W.G.アームストロング・ホワイトワース社」が誕生した。</p>
+<hr />
+<h3 id="8-2-19001914">8-2. 1900〜1914年の経営層</h3>
+<p>アームストロング死去後の会社を担ったのは<strong>科学者・小説家・植民地鉄道技師</strong>という軍需産業経営者としては非常に異色の三者だった。</p>
+<h4 id="j1858-1932">J・ミード・フォークナー（1858-1932）── 「大砲を売る小説家」</h4>
+<p>取締役1901〜1926年、会長1915〜1921年。1858年ドーセット生まれ。オックスフォード（ハートフォード・カレッジ）卒業後、デービー・スクールで教師を務めた後に<strong>アンドリュー・ノーブル一家の家庭教師</strong>としてニューカッスルへ。その後ノーブルの個人秘書→会社秘書役→1901年取締役と昇進した。アスキス首相はフォークナーを「どこか憂鬱そうな顔つきで、あたかも異国に移植されたスペインの貴族のような風格がある」と評した。</p>
+<p>文学作品は1895〜1903年の3冊に集中している──『失われたストラディヴァリウス』（1895年）、<strong>『ムーンフリート』（1898年）</strong>（密輸を題材にした冒険小説。現在でも英語圏で読み継がれる）、『ネビュリー・コート』（1903年）。これらを書いていた時期と取締役就任がほぼ重なる。ある日デューラムとエルズウィックの間の列車で<strong>書きかけの第4作の原稿を丸ごと紛失</strong>し、書き直しの懇願を断固として拒否して以後小説を書かなかった。</p>
+<p>語学力と外交的忍耐力から「外国政府向け交渉役」として南米・ヨーロッパを飛び回り、出張先で古写本・稀覯本を買い集めた。引退後はダラム大聖堂の名誉司書となり、ラテン語中世写本を40冊以上のノートに書き写した（筆跡は中世の写字生を模倣）。法王のゴールド・メダル受章。<strong>世界最大の兵器会社の会長でありながら、中世写本を写し続けたダラムの司書</strong>という二重性は、アームストロング社の1900〜1920年代を象徴している。</p>
+<hr />
+<h4 id="1867-1932">パーシー・ジルアール（1867-1932）── 「キッチナーの鉄道技師が着任した専務」</h4>
+<p>専務取締役在任：1912〜1932年。カナダ・ケベック生まれのフランス系カナダ人。王立陸軍士官学校（カナダ）を首席卒業後、王立工兵隊将校として主にアフリカで植民地鉄道建設を担った。</p>
+<p>1896年のドンゴラ遠征でキッチナー将軍に見初められ、スーダン軍用鉄道延伸（ヌビア砂漠横断）を主導。ウィンストン・チャーチル（当時従軍記者）が「非常識なほど優れている」と称賛し、「ランプから機関車まで全てを網羅した綿密な補給計画」と記録している。ボーア戦争（1899-1902年）でも軍用鉄道の再建を指揮してロバーツ卿のプレトリア進軍を支え、キッチナーから「傑出した才能を持つ将校」と評された。</p>
+<p>北ナイジェリア高等弁務官（1906-09年）・東アフリカ保護領（ケニア）総督（1909-12年）を歴任したが、マサイ人強制移住問題でロンドンと対立して辞任。同年アームストロングの専務に就任。1915年の「砲弾危機」でロイド・ジョージの軍需総監として一時政府入りしたが、「政治の仕事は自分の性に合わない」として6週間でアームストロングへ戻った。カナダのバンフ国立公園にある山に名前が残っている。</p>
+<hr />
+<h4 id="_3">ノーブルの息子たちと継承</h4>
+<p>ジョージ（後に第2代準男爵）・サクストン（1863-1942、後に第3代準男爵）・ジョン（後に単独で第1代準男爵叙爵）の三兄弟が揃って取締役に就いており、ノーブルが「世襲的アプローチで後継者を育てた」と評されるゆえんである。ただし息子たちの個人としての活動記録は一般的に薄く、実務を動かしていたのはフォークナー・ジルアールら外部人材だったと見られる。</p>
+<hr />
+<h3 id="8-3-wwi">8-3. 会社史の骨格（〜WWI）</h3>
+<p><strong>第一段階：油圧機械と兵器参入（1847〜1882年）</strong></p>
+<ul>
+<li><strong>1847年</strong> ── エルズウィック工場設立（£19,500＋特許権£3,000）。油圧クレーン・倉庫用リフト・可動橋の製造</li>
+<li><strong>1858年</strong> ── アームストロング砲の特許を政府に無償献上</li>
+<li><strong>1859年</strong> ── エルズウィック兵器会社を分社化（政府との利益相反回避）</li>
+<li><strong>1863年</strong> ── 英陸軍省が前装砲に回帰 → 輸出市場に活路</li>
+<li><strong>1882年</strong> ── チャールズ・ミッチェルの造船会社と合併して「アームストロング・ミッチェル社」設立。タイン川沿いに2km超の工場群</li>
+</ul>
+<p><strong>第二段階：世界最大の輸出軍艦メーカー（1882〜1897年）</strong></p>
+<p>1884年にエルズウィックに専用造船所を設置。砲もそれを載せる艦体も自社で完結する「完成軍艦ワンストップ提供」が確立。1885年以降で<strong>150隻以上の軍艦を輸出</strong>した。</p>
+<p>主な日本向け艦艇：「浪速」（1885年）、「吉野」（1892年）、「八島」（1896年）、「浅間」（1898年）。「吉野」はアルゼンチン向け設計の転用、「浅間」はチリ向け「オヒギンズ」とほぼ同設計──同一設計図を複数国に売る「転用輸出モデル」の洗練ぶりがこの時期に確立された。</p>
+<p><strong>第三段階：ホワイトワース合併と拡大（1897〜1914年）</strong></p>
+<ul>
+<li><strong>1897年</strong> ── ホワイトワース社を吸収合併して現社名へ（同年ヴィッカーズもバロー造船所・マキシム社を買収。英国軍需産業の二極化が同年に完了）</li>
+<li><strong>1900年</strong> ── アームストロング死去、ノーブルが正式会長就任</li>
+<li><strong>1913年</strong> ── 英国企業3社（ヴィッカーズ・ジョン・ブラウン・アームストロング）がオスマン帝国向け<strong>「帝国オスマン・ドック・造兵廠・造船会社」</strong>を共同設立。英国側£120万投資、オスマン政府は「今後30年間の海軍発注全てをこのコンソーシアムへ」と約束</li>
+<li><strong>スルタン・オスマン1世</strong>（ブラジル海軍向けに建造中だった弩級戦艦をオスマン帝国が買い取る契約）：1914年8月の開戦直前にチャーチル海軍大臣が没収。これがオスマン帝国のドイツ側参戦の一因とされる</li>
+<li><strong>1913年</strong> ── 航空部門設立</li>
+</ul>
+<hr />
+<h2 id="9">9. 造船・軍艦部門の主要人物（両社）</h2>
+<h3 id="9-1">9-1. アームストロング社（エルズウィック）── 社内設計者の三代系譜</h3>
+<h4 id="1833-1902">ジョージ・ウィックワース・レンデル（1833-1902）── 「防護巡洋艦の発明者」</h4>
+<p>土木技師の家系（父はアームストロングの旧友）。エルズウィック工場に弟子入りし、アームストロング自身の邸宅に3年間同居しながら技術を磨いた。弟のスチュアート・レンデルはロンドン代理人として会社の政治的顔を担い、兄ジョージが技術的基盤を築いた。</p>
+<p>業績の二本柱：(1)<strong>「フラット・アイアン砲艦（Rendel gunboat）」</strong>──極めて浅い喫水に大型砲一門のみを搭載した小型砲艦で、当時のアイロンに形が似ることから俗称された。英海軍・イタリア・ブラジル・チリ等に輸出。(2)<strong>世界初の防護巡洋艦「エスメラルダ」</strong>（チリ向け、1883年）──喫水線下に鋼鉄製アーチ状保護甲板を全通させ機関・弾薬庫等の重要部をその下に配置する構造を実用化。「エスメラルダ型」はその後数十年の巡洋艦設計の世界標準となった。また油圧式砲塔装置を開発し英海軍全艦艇・複数の外国海軍に採用された。アルフレッド・ヤロウと共同で強制通風（forced-draught）ファンによる機関出力向上も実現した。</p>
+<p>1882年、経営方針をめぐる内部対立で辞任。</p>
+<hr />
+<h4 id="1845-1913-245">ウィリアム・ヘンリー・ホワイト（1845-1913）── 「エルズウィックを組織した後、245隻を設計した男」</h4>
+<p>デヴォンポートの造船職人の息子。王立海軍建築学校卒業後、海軍省の造船官補として36歳で主任造船官（Chief Constructor）に昇進。1883年、アームストロングから直々にスカウトされ「<strong>エルズウィック造船所を一から組織・立ち上げる</strong>」仕事を引き受けた（在籍はわずか2年半、1883〜85年）。</p>
+<p>1885年に海軍省へ戻って艦艇建造長官（DNC）に就任。以後16年間に責任を担った艦艇は<strong>戦艦43隻・装甲巡洋艦26隻・防護巡洋艦102隻など計245隻、評価額£8,000万</strong>。「ロイヤル・ソブリン」級戦艦（前弩級最強と評される）の設計に中心的に関わった。1901年、国会での批判（1900年の王室ヨット浮揚事故に端を発する）が引き金となり神経衰弱を発症して休職。1902年に引退し1913年に脳卒中で死去。</p>
+<hr />
+<h4 id="1846-1926">フィリップ・ワッツ（1846-1926）── 「エルズウィック輸出艦とドレッドノートの設計者」</h4>
+<p>デプトフォード生まれ。ポーツマス造船所附属学校→王立海軍建築学校を経て海軍省の造船官となり、1885年にエルズウィックに着任してホワイトの後任として<strong>1901年まで艦艇設計・管理責任者</strong>を担った。</p>
+<p>「エルズウィック巡洋艦」として世界に知られる輸出艦の一大シリーズを設計した。日本向けの主な艦艇：八島（戦艦、1896年）・浅間・常磐（装甲巡洋艦、1898〜99年）・初瀬（戦艦、1899年）。チリ・ブラジル・アルゼンチン・ノルウェー・ポルトガルなどにも設計を提供した。</p>
+<p><strong>1901年、海軍省の艦艇建造長官（DNC）に転じた（ホワイトの後継）。1905年、HMS「ドレッドノート」を設計</strong>──30.5cm砲10門・18ノット・17,900トン、あらゆる既存戦艦を一世代時代遅れにした「革命艦」。1916年のユトランド沖海戦において英国が投入した戦艦・巡洋戦艦34隻のうち<strong>29隻がワッツ設計</strong>だった。1912年に海軍省を引退後、かつての職場アームストロングに戻って取締役に就任。晩年はHMS「ヴィクトリー」（ネルソン旗艦）の保存・修復事業に尽力した。王立協会フェロー（1900年）・KCB叙爵（1905年）。妻はベルギー人リソグラファーの娘。</p>
+<p><strong>設計者の流れとしての重要性</strong>：ホワイト（1883-85）→ワッツ（1885-1901）という引き継ぎで、エルズウィック造船所の「社内設計者」の系譜が形成され、輸出艦市場での優位を支えた。さらに両者がそれぞれ海軍省DNCに就任することで、アームストロングの設計思想が英国海軍本体にも流入するという双方向の人材回流が生まれていた。</p>
+<hr />
+<h3 id="9-2">9-2. ヴィッカーズ社（バロー造船所）── 生産管理の専門家が中心</h3>
+<h4 id="1856-1931">ジェームズ・マッケクニー（1856-1931）── 「バローを動かしたスコットランドの機械工」</h4>
+<p>アーガイル州オーバン生まれ。グラスゴー・メカニクス研究所＋アンダーソン・カレッジ卒。グラスゴーの造船会社でドラフツマン（設計製図工）として出発し、クライドバンク工場（後のジョン・ブラウン社）の主任ドラフツマンまで昇進した。</p>
+<p>1889〜95年にスペインのビルバオに渡り、スペイン海軍向け巡洋艦の機械設備工場を管理。この功績でスペイン王立イザベル勲章を受章（アルバート・ヴィッカーズと同種の対スペイン外交の産業的パイプが垣間見える）。</p>
+<p>1895年にバローの海軍建造工場に入社し、ヴィッカーズ買収後も留任。1899年に特別取締役、1910年に正式取締役、第一次大戦下で専務取締役（managing director）となり1923年に退任するまでバロー工場を実質的に仕切った。「艦艇を設計した」人物ではなく「工場を回した」人物。第一次大戦中はモアカンブの国家爆薬充填工場・ランカスターの国家砲弾工場も兼務管理し、1918年KBE叙爵。晩年の1924年に結婚（約68歳時）。</p>
+<hr />
+<h4 id="1863-1947">レジナルド・ベーコン（1863-1947）── 「英海軍初の潜水艦をヴィッカーズと共同設計した将校」</h4>
+<p>厳密には「ヴィッカーズの社員」ではなく、海軍省からバローに乗り込んだ<strong>「初代潜水艦監督将校（Inspecting Captain of Submarines）」</strong>（1901年着任）として、ヴィッカーズ技術陣との共同作業を仕切った人物。</p>
+<p>着任時点でヴィッカーズはジョン・ホランド設計（アメリカ）のライセンスによるホランド型潜水艦5隻を建造中だった。ベーコンはこの原型設計を改良し、コニング・タワーと潜望鏡を追加した<strong>HMS「A1」──英国独自設計の最初の潜水艦</strong>をヴィッカーズの造船技師と共同で完成させた。</p>
+<p>フィッシャー提督から「海軍で最も賢い将校」と2度評されたほどの技術的頭脳を持つ一方、「頑固な中央集権主義者で、誰の助けも必要とすることを決して認めなかった」という評もあった。「周囲の評価を真っ二つに割る」人物で、モーリス・ハンキーからは「攻撃的精神を持つ唯一の将校」と称えられ、ライバルのタイアウィットからは「ドイツの敵より始末が悪い」と酷評された。第一次大戦でのドーバー哨戒司令官時代、ドイツ潜水艦が防衛網を毎夜突破しているという情報を「防衛線は有効だ」と否定し続けた件が後年問題視された。</p>
+<hr />
+<h3 id="9-3">9-3. 両社の構造的対比</h3>
+<p>アームストロングが<strong>レンデル→ホワイト→ワッツという「社内設計者の三代系譜」を持ち、その設計力で輸出市場を独占した</strong>のに対し、ヴィッカーズは<strong>ホランド型ライセン ス＋海軍省との協働という外部依存型で潜水艦事業を立ち上げ、設計より生産能力で存在感を示した</strong>。</p>
+<p>ワッツがアームストロング→海軍省（ドレッドノート設計）→アームストロング（取締役）と往復していることも象徴的で、当時の英国軍艦設計の世界が「民間企業と海軍省の人材が同じ池を回遊する」閉じた生態系だったことを示している。</p>
+<hr />
+<h2 id="79">出典（セクション7〜9）</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/William_Armstrong,_1st_Baron_Armstrong">William Armstrong, 1st Baron Armstrong - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sir_Andrew_Noble,_1st_Baronet">Andrew Noble, 1st Baronet - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/J._Meade_Falkner">J. Meade Falkner - Wikipedia</a></li>
+<li><a href="https://www.hertford.ox.ac.uk/associate/j-meade-falkner-1858-1932/">J. Meade Falkner - Hertford College, Oxford</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Percy_Girouard">Percy Girouard - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Stuart_Rendel,_1st_Baron_Rendel">Stuart Rendel, 1st Baron Rendel - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Joseph_Whitworth">Joseph Whitworth - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Thomas_Vickers">Thomas Vickers - Wikipedia</a></li>
+<li><a href="https://www.gracesguide.co.uk/Albert_Vickers">Albert Vickers - Graces Guide</a></li>
+<li><a href="https://www.gracesguide.co.uk/Thomas_Edward_Vickers">Thomas Edward Vickers - Graces Guide</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Trevor_Dawson">Trevor Dawson - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vincent_Caillard">Vincent Caillard - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vincent_Cartwright_Vickers">Vincent Cartwright Vickers - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Douglas_Vickers">Douglas Vickers - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vickers">Vickers - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Armstrong_Whitworth">Armstrong Whitworth - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Philip_Watts_(naval_architect)">Philip Watts - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/George_Wightwick_Rendel">George Wightwick Rendel - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/William_Henry_White">William Henry White - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Reginald_Bacon">Reginald Bacon - Wikipedia</a></li>
+<li><a href="https://www.gracesguide.co.uk/James_McKechnie">James McKechnie - Graces Guide</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cragside">Cragside - Wikipedia</a></li>
+<li><a href="https://www.ardkinglas.com/the-estate/the-noble-family.html">The Noble Family - Ardkinglas Estate</a></li>
+<li><a href="https://hpcbristol.net/visual/Bi-s013">Sir Albert Vickers, Hiram Maxim and Li Hongzhang - Historical Photographs of China</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Japanese_battleship_Mikasa">Japanese battleship Mikasa - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Japanese_battleship_Kong%C5%8D">Japanese battleship Kongō - Wikipedia</a></li>
+<li><a href="https://armingallsides.org.uk/case_studies/ottoman-navy-scandal/">Ottoman Navy Scandal - Arming All Sides</a></li>
+<li><a href="https://spectator.com/article/poet-novelist-and-arms-dealer/">Poet, novelist and arms-dealer - The Spectator</a></li>
+</ul>
+<hr />
+<h2 id="10">10. 近代日本の軍需産業 ── 「クルップなき軍国」の構造</h2>
+<h3 id="10-1">10-1. 日本型軍需産業の基本構造</h3>
+<p>欧州三大軍需企業（クルップ・シュナイダー・ヴィッカース）はいずれも <strong>「民間鉄鋼会社→兵器メーカー」</strong> の発展経路を取ったが、日本は逆に <strong>「官営工廠が主、民間が従」</strong> という構造を取った。これは明治国家が殖産興業＝富国強兵を国家事業として遂行したため、軍需は最初から官営で立ち上げられたことに由来する。民間に任せるだけの民間資本も技術蓄積もなかった、という後発資本主義の制約でもある。</p>
+<table>
+<thead>
+<tr>
+<th>国</th>
+<th>主導型</th>
+<th>代表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ドイツ</td>
+<td>民間同族財閥（国家と一体化）</td>
+<td>クルップ</td>
+</tr>
+<tr>
+<td>イギリス</td>
+<td>民間株式会社（市場契約）</td>
+<td>ヴィッカース・アームストロング</td>
+</tr>
+<tr>
+<td>フランス</td>
+<td>民間政商型（多元的調達）</td>
+<td>シュナイダー</td>
+</tr>
+<tr>
+<td><strong>日本</strong></td>
+<td><strong>官営工廠が主、民間は補完</strong></td>
+<td><strong>東京砲兵工廠／呉海軍工廠</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-2">10-2. 明治期 ── 旧幕府遺産を継承した官営工廠</h3>
+<h4 id="_4">陸軍系</h4>
+<ul>
+<li><strong>東京砲兵工廠（小石川）</strong>：1871年操業開始。旧幕府の関口製造所と滝野川反射炉を統合・拡張。村田銃（1880年制式）、三十年式歩兵銃（1897）、三八式歩兵銃（1905）、有坂砲などの開発・量産拠点。1893年時点で1日に小銃200挺、実包20万発を生産可能。1923年関東大震災で被災 → 小倉造兵廠（北九州）へ機能移転。</li>
+<li><strong>大阪砲兵工廠</strong>：1870年大阪城内に創設。大砲・砲弾の主力拠点として東洋最大規模の総合兵器工場に成長。1945年8月14日の終戦前日大空襲で壊滅。</li>
+</ul>
+<h4 id="_5">海軍系（鎮守府制度のもと）</h4>
+<ul>
+<li><strong>横須賀海軍工廠</strong>：1865年、徳川幕府がフランス人技術者レオンス・ヴェルニーの指導で「横須賀製鉄所」として設立 → 1871年新政府接収。<strong>日本の重工業の母</strong>。</li>
+<li><strong>呉海軍工廠</strong>：1889年呉鎮守府設置、1903年に造船廠＋造兵廠を統合して成立。<strong>戦艦「大和」を建造</strong>した国家最大級の総合工廠。</li>
+<li>佐世保海軍工廠（1898）、舞鶴海軍工廠（1901）。</li>
+</ul>
+<h4 id="_6">お雇い外国人から技術自立へ</h4>
+<p>明治初年は完全な技術輸入期で、横須賀＝フランス、海軍兵学校＝英国、陸軍は当初フランス式、1885年以降ドイツ式（メッケル参謀本部）へ転換。大砲はクルップ式で、明治初年に <strong>榎本武揚・赤松則良がアルフレート・クルップを直接訪問</strong>、開陽丸用に18門を発注。1880年代以降、<strong>有坂成章</strong> が国産化を主導し、<strong>31年式速射野砲</strong>（1898）でクルップ／シュナイダー水準に到達。</p>
+<h3 id="10-3">10-3. 民間軍需企業 ── 半官半民モデル</h3>
+<h4 id="_7">日本製鋼所（日鋼）── 唯一の「日本版ヴィッカース」</h4>
+<ul>
+<li><strong>1907年、北海道室蘭に設立</strong>。出資構成は <strong>北海道炭礦汽船（北炭）＋英ヴィッカース＋英アームストロング・ホイットワース</strong> の日英合弁。</li>
+<li>設立経緯：日露戦争の艦砲・艦砲弾の輸入依存に懲りた海軍（呉鎮守府司令長官 山内万寿治中将）が国産化を提唱、英2社の技術提携で実現。</li>
+<li><strong>「世界4大民間兵器工場の1つ」</strong> と当時称された。戦艦「長門」「陸奥」の主砲、戦艦「大和」の装甲板を製造。</li>
+<li>日本における「クルップ＝ヴィッカース型民間軍需財閥」に最も近い存在だが、それでも完全民間ではなく「<strong>国策合弁会社</strong>」という性格を脱しなかった。</li>
+</ul>
+<h4 id="_8">三菱長崎造船所 → 三菱重工業</h4>
+<p>1857年幕府長崎溶鉄所として発足 → 1884年三菱借受、1887年払下げ。戦艦「霧島」「武蔵」、巡洋艦多数を建造。<strong>戦艦「武蔵」は呉ではなく長崎で建造</strong> ── 民間造船所が戦艦級主力艦を作った稀有な例。1934年三菱重工業として統合。</p>
+<h4 id="_9">川崎造船所 → 川崎重工業</h4>
+<p>1878年川崎正蔵が築地に創業 → 1886年神戸に拡張 → 1896年株式会社化。巡洋戦艦「榛名」、戦艦「伊勢」「加賀」、潜水艦、機関車、航空機 ── 三菱と並ぶ重工複合体。神戸工場は欧州型「総合軍需企業」に最も近い民間。</p>
+<h4 id="_10">中島飛行機 ── 異色の民間航空機メーカー</h4>
+<p>1917年創業。創業者 <strong>中島知久平</strong> は元海軍機関大尉で、海軍内部での「航空機の民間化」運動の挫折を機に退役して設立。三菱（航空部門は1919年〜）、川西（1920年〜）より早い、<strong>日本最初の専業航空機メーカー</strong>。1927–1945年に日本で生産された戦闘機30,578機のうち <strong>半数を超える16,763機を中島が製造</strong>。代表作は一式戦闘機「隼」、二式単戦「鍾馗」、四式戦「疾風」。零戦の半数以上も中島で量産（三菱設計を中島でライセンス生産）。戦後12社に分割 → 富士産業 → <strong>富士重工業（現SUBARU）</strong> が直系。中島知久平は <strong>日本でほぼ唯一の「ザハロフ／クルップ型カリスマ軍需経営者」</strong> と言える存在。</p>
+<h4 id="_11">住友・三井</h4>
+<ul>
+<li><strong>住友財閥</strong>：別子銅山以来の素材系。住友金属工業（軍用鋼）、住友通信工業（後のNEC、軍用通信）、住友プロペラ製造所（航空機部品）。<strong>「住友直系会社のすべてが軍需会社指定を受けた」</strong> とされる重化学指向。</li>
+<li><strong>三井財閥</strong>：商社・鉱業寄り。<strong>三井物産が英ヴィッカースの日本総代理店</strong> として、シーメンス事件の中心に立つ。</li>
+</ul>
+<h3 id="10-4-1914">10-4. シーメンス事件（1914）── 日本版「死の商人」スキャンダル</h3>
+<p>セクション5・6で示した政治史的扱いに対し、軍需産業史としての再評価が学術的に薄い領域。要点：</p>
+<ul>
+<li>1914年1月、東京裁判所での独シーメンス社東京支店社員カール・リヒターの恐喝事件公判から、シーメンスが海軍高官に贈賄して通信機材を独占受注していた事実が発覚。</li>
+<li>3月、英ヴィッカースが巡洋戦艦「金剛」発注を獲得するため、日本総代理店 <strong>三井物産（重役 岩原謙三）</strong> を通じて、艦政本部長 <strong>松本和中将</strong> に約40万円を贈賄していた「<strong>ヴィッカース・金剛事件</strong>」が浮上。</li>
+<li>戦艦「金剛」は日本海軍が英国に発注した最後の主力艦。<strong>金剛型4隻のうち1番艦のみ英国製、2番艦「比叡」以降は日本国内（横須賀・神戸・長崎）でライセンス生産</strong> ── この技術移転に伴う巨額のリベートが動いた。</li>
+<li>海軍出身の <strong>山本権兵衛 第1次内閣が3月24日総辞職</strong>、貴族院が海軍予算7000万円を削減 → 海軍拡張計画に重大な打撃。</li>
+</ul>
+<p>学術的意義：欧州の「死の商人」言説と完全に同時代（Engelbrechtの本は1934年だが、Nye委員会の問題意識は1914年前後から）。ヴィッカース＝三井＝海軍高官の三角関係は、ザハロフの「Système Zaharoff」の日本ローカル展開でもある。<strong>ただし重要なのは、日本にはこの事件を主導した「日本人軍需資本家」が存在しないこと</strong>。贈賄を行ったのは外国資本（独シーメンス、英ヴィッカース）と、その代理人としての商社（三井物産）。<strong>「日本産の死の商人」がいない</strong> ことが、欧州との決定的差異。</p>
+<h3 id="10-5">10-5. 戦時統制 ── 「国家による軍需の完全吸収」</h3>
+<ul>
+<li><strong>国家総動員法（1938年4月）</strong>：戦争遂行のため、議会審議を経ずに政府が人的・物的資源を統制可能とする授権法。</li>
+<li><strong>軍需会社法・軍需省（1943年10月／11月）</strong>：勅令824号「軍需省官制」により、商工省の大半＋企画院国家総動員部門を統合。軍需大臣（東條英機が兼任）が直接「指定軍需会社」を統制。三菱重工業、中島飛行機、川崎航空機、日本製鋼所、住友各社などが指定軍需会社（約600社）に。「会社」という法形式は残されたが、経営判断は軍需省→軍需会社生産責任者制で国家が直接掌握。</li>
+</ul>
+<p>→ この段階で日本の民間軍需企業は <strong>欧州型「軍需資本家」とは完全に異質な「国家計画経済の執行単位」</strong> となり、クルップ・ヴィッカース・シュナイダーのような企業家的アイデンティティを持ちようがなくなった。</p>
+<h3 id="10-6">10-6. 戦後 ── 解体と再生</h3>
+<ul>
+<li><strong>財閥解体（1945–1947）</strong>：三菱重工業は3社に分割（東日本・中日本・西日本重工業）、1964年に再統合。中島飛行機は12社に分割 → 富士重工業、富士精密工業（現プリンス→日産）など。日本製鋼所は存続。</li>
+<li>大日本帝国の官営工廠（東京・大阪・呉・横須賀・佐世保・舞鶴）は全廃または民間転用（呉は石川島播磨重工業＝現IHI、横須賀は米海軍施設）。</li>
+<li>戦後は <strong>三菱重工業、川崎重工業、IHI、日本製鋼所、コマツ、日立、東芝、富士通、NEC</strong> などが防衛装備品を供給。<strong>「防衛省は最大の発注者だが、各社の売上に占める防衛比率は数〜十数％」</strong> という「兼業型防衛産業」が日本の特徴。武器輸出禁止三原則（1967、佐藤内閣）→ 防衛装備移転三原則（2014、安倍内閣）の制度的制約。</li>
+</ul>
+<h3 id="10-7">10-7. 構造的比較 ── 欧州と日本</h3>
+<table>
+<thead>
+<tr>
+<th>観点</th>
+<th>欧州（独・英・仏）</th>
+<th>日本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>発展経路</td>
+<td>民間鉄鋼→軍需</td>
+<td>官営工廠→民間補完</td>
+</tr>
+<tr>
+<td>中心アクター</td>
+<td>同族財閥／株式会社</td>
+<td>国家＋財閥傘下事業会社</td>
+</tr>
+<tr>
+<td>経営の象徴</td>
+<td>カリスマ家父長（A.クルップ）</td>
+<td>匿名的官僚＋技術将校（山内万寿治、有坂成章）</td>
+</tr>
+<tr>
+<td>「死の商人」</td>
+<td>ザハロフ、クルップ家</td>
+<td>不在（シーメンス事件は外国側）</td>
+</tr>
+<tr>
+<td>輸出</td>
+<td>全世界へ大規模輸出</td>
+<td>ほぼ皆無（国内自給型）</td>
+</tr>
+<tr>
+<td>戦時統制</td>
+<td>同族支配を維持したまま国家動員</td>
+<td>国家が経営権を直接吸収（軍需会社法）</td>
+</tr>
+<tr>
+<td>戦後</td>
+<td>一部解体・継承（クルップ→Thyssenkrupp、ヴィッカース→BAE）</td>
+<td>財閥解体＋武器輸出禁止で完全に冬眠</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5_1">なぜ「日本のクルップ」がいなかったか ── 5つの構造的理由</h4>
+<ol>
+<li><strong>後発資本主義</strong>：明治期に欧州型「鉄鋼大資本」が存在せず、官営でしか始められなかった。</li>
+<li><strong>国家＝軍直営の伝統</strong>：徳川幕府時代から武器は藩・幕府直営（江戸の鉄炮方、各藩の砲術方）であり、民間商人が武器を製造する伝統がなかった。</li>
+<li><strong>輸出市場の不在</strong>：日本の地理的位置（東アジア孤立）と、アジア諸国の植民地化により、欧州型「国際武器商人」になる経済的動機がなかった。</li>
+<li><strong>軍部の反財閥イデオロギー</strong>：陸軍特に皇道派は「軍需は国家の聖務、財閥は穢らわしい」という観念を持ち、欧州型の「軍需資本家＝国家のパートナー」関係の確立を妨げた。</li>
+<li><strong>戦時統制と戦後解体の二重の断絶</strong>：1943年軍需会社法で経営独自性を喪失、1947年財閥解体で同族支配も解体 ── 連続性を持って継承された「軍需家」が存在しない。</li>
+</ol>
+<p>ただし「<strong>いなかった</strong>」のではなく「<strong>いたが、戦時統制と敗戦で消えた</strong>」という、より精密な像を可能にするのが新興財閥研究（→ zaibatsu_history.md §9 参照）である。</p>
+<h3 id="10-8">10-8. 研究上の論点</h3>
+<ul>
+<li><strong>官主導モデルの系譜論</strong>：明治の官営工廠 → 軍需省 → 防衛省調達 → 自衛隊技術研究本部・装備庁、と通じる「国家が技術開発と調達を一手に握る伝統」は、現代日本の防衛装備庁構想にまで連続する。</li>
+<li><strong>シーメンス事件の比較史的再評価</strong>：1914年シーメンス／ヴィッカース・金剛事件は、ナイ委員会（1934）に先立つ「死の商人スキャンダルの最初期事例」として国際的に研究価値が高いが、日本史研究では政争史として扱われがちで軍需史としての位置づけが弱い。</li>
+<li><strong>中島知久平研究の薄さ</strong>：日本で最もカリスマ的軍需経営者ながら、戦後A級戦犯指定の不名誉から長く忘却され、近年再評価が始まっている。</li>
+<li><strong>日本製鋼所＝日英合弁の特異性</strong>：英ヴィッカースとアームストロングが日本に直接出資した事例は、戦間期国際軍需カルテル研究の重要事例だが日本語文献が薄い。</li>
+</ul>
+<h3 id="10-9">10-9. 推奨参考文献</h3>
+<ul>
+<li>三和良一・原朗 編『近現代日本経済史要覧』東京大学出版会</li>
+<li>澤井実『日本鉄道車輌工業史』日本経済評論社</li>
+<li><strong>奈倉文二『兵器鉄鋼会社の日英関係史 ── 日本製鋼所と英国側パートナー 1907–52』日本経済評論社</strong>（邦語で唯一の本格的研究）</li>
+<li>西成田豊『近代日本労資関係史の研究』東京大学出版会</li>
+<li>山崎志郎『戦時経済総動員体制の研究』日本経済評論社</li>
+<li>佐藤達男『中島飛行機 ── エンジン技術開発史』三樹書房</li>
+<li>Richard J. Samuels, <em>"Rich Nation, Strong Army": National Security and the Technological Transformation of Japan</em> (Cornell, 1994) ── 英語圏での日本軍需産業論の決定版</li>
+</ul>
+<h3 id="10-10">10-10. 出典</h3>
+<ul>
+<li><a href="https://ja.wikipedia.org/wiki/%E5%B7%A5%E5%BB%A0">工廠 — Wikipedia</a></li>
+<li><a href="https://www.ndl.go.jp/scenery/column/kansai/osaka_army_arsenal.html">コラム：大阪砲兵工廠 — 国立国会図書館</a></li>
+<li><a href="https://yamatomuseum.securesite.jp/annex/?page_id=2248">呉海軍工廠の設立 — 大和ミュージアム別館</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Koishikawa_Arsenal">Koishikawa Arsenal — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Yokosuka_arsenal">Yokosuka Naval Arsenal — Wikipedia</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%A3%BD%E9%8B%BC%E6%89%80%E5%AE%A4%E8%98%AD%E8%A3%BD%E4%BD%9C%E6%89%80">日本製鋼所室蘭製作所 — Wikipedia</a></li>
+<li><a href="https://yamato-museum.com/note/vol6/">館長ノートvol.6 室蘭の日本製鋼所 — 大和ミュージアム</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E4%BA%8B%E4%BB%B6">シーメンス事件 — Wikipedia</a></li>
+<li><a href="https://kazuya-hatayama.xyz/siemens-scandal/">シーメンス／ヴィッカース・金剛事件 — 大正・昭和10000日の追憶</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E9%A3%9B%E8%A1%8C%E6%A9%9F">中島飛行機 — Wikipedia</a></li>
+<li><a href="https://www.jstage.jst.go.jp/article/bhsj/50/3/50_26/_pdf">太平洋戦争期中島飛行機の機体事業と生産能率 — J-STAGE 佐藤達男</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E8%BB%8D%E9%9C%80%E7%9C%81">軍需省 — Wikipedia</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E5%9B%BD%E5%AE%B6%E7%B7%8F%E5%8B%95%E5%93%A1%E6%B3%95">国家総動員法 — Wikipedia</a></li>
+<li><a href="https://ocu-omu.repo.nii.ac.jp/record/2002743/files/111TDB2897.pdf">19-20世紀転換期におけるクルップ社の活動：ドイツ海軍拡張への関与と日本市場獲得の試み — 大阪市立大学リポジトリ</a></li>
+<li><a href="https://www.nids.mod.go.jp/publication/kiyo/pdf/bulletin_j12-2-3_6.pdf">防衛研究所紀要 ジョン・パーマ「日本の防衛産業は今後如何にあるべきか？」</a></li>
+</ul>
+<hr />
+<h2 id="11">11. シュナイダー社 ── 軍需企業・中心人物・プロダクト</h2>
+<p>セクション7-9のヴィッカース／アームストロング深掘りに対応する、仏シュナイダー側の整理。日本語文献が極端に薄い領域なので、英仏一次情報からまとめる。</p>
+<h3 id="11-1">11-1. 軍需企業としてのシュナイダー社</h3>
+<h4 id="_12">三段階の軍需化</h4>
+<table>
+<thead>
+<tr>
+<th>段階</th>
+<th>時期</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第1段階</td>
+<td>1830s-1870</td>
+<td>国家への武器供給独占権を獲得。ウジェーヌ1世が政治力で確保</td>
+</tr>
+<tr>
+<td>第2段階</td>
+<td>1871-1900</td>
+<td>普仏戦争敗北後、民間銃砲規制が撤廃。装甲板・艦砲・陸戦砲の本格生産</td>
+</tr>
+<tr>
+<td>第3段階</td>
+<td>1900-1939</td>
+<td>国際的軍需コングロマリットへ。金融・植民地・東欧支配</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_13">フランス国内のオリゴポリ</h4>
+<p>シュナイダーは「独占」ではなく寡占の最大手。<strong>Saint-Chamond（FAMH）、Hotchkiss、Châtillon-Commentry、Forges de la Loire</strong> らと競合。背景にはナポレオン3世期以降の「複数業者競争による価格抑制と政治的均衡」という調達思想がある。第一次大戦の戦車開発では FAMH と特許係争 → 政府は400両発注で対抗馬を育てる分割発注政策を取った。</p>
+<h4 id="_14">金融資本との一体化</h4>
+<p>ウジェーヌ2世が会長を務めた <strong>Union Européenne Industrielle et Financière（UEIF, 1920設立）</strong> はシュナイダー海外進出の持株会社・投資銀行で、<strong>クレディ・リヨネ</strong> とも資本関係。中欧諸国の軍需工場買収、対独包囲網（コルドン・サニテール）と歩調を合わせた投資、武器輸出のファイナンスを一体運用 ── 「武器・鉄・金融・外交」が同心円状に重なる仏独自の軍需財閥モデルで、クルップ（同族企業）、ヴィッカース（株式会社）とは異なる類型。</p>
+<h4 id="1919">中東欧支配 ── シュコダ社買収（1919）</h4>
+<p>学術的に最重要：第一次大戦終結直後 <strong>1919年9月、新独立国チェコスロヴァキアの巨大軍需企業シュコダ社（Škoda Works, プルゼニ）の支配株を取得</strong>。1922年「<strong>Artillery Convention</strong>」で輸出市場を分割：シュコダが中欧・バルカン、シュナイダーが地中海・南米など。戦間期チェコスロヴァキアの武器輸出は同国全輸出の <strong>約10%</strong>（1939以前）に達し、その大半がシュコダ＝シュナイダー系列。ポーランド（HCP）、ルーマニア（Reșița）、ハンガリーにも投資網。<strong>「ヴェルサイユ体制の経済的補強装置」</strong> として機能した。</p>
+<h4 id="_15">帝政ロシア市場</h4>
+<p>1900年代から <strong>プチロフ工場（Putilov）</strong> やロシア＝バルト鉄道車両会社に資本参加。ロシア帝国陸軍の野砲のかなりの部分がシュナイダー設計のライセンス生産。ロシア革命（1917）で資産喪失 → 対ソ警戒と中欧投資シフトの背景に。</p>
+<h3 id="11-2">11-2. 中心人物のパーソナリティ</h3>
+<h4 id="11805-1875">ウジェーヌ・シュナイダー1世（1805-1875）── 「政商」型創業者</h4>
+<p>モーゼル県ビデストロフ生、父を早く亡くし苦学。ランスの商社、後にセイリエール男爵の銀行に勤務し、25歳でバゼイユ製鉄所長に抜擢された早熟な経営者。<strong>政治家としての側面が極めて強い</strong>：1845-1870ソーヌ=エ=ロワール県下院議員、1851年農商務大臣（短期）、<strong>ルイ・ナポレオンの1851年クーデターを支持</strong>、第二帝政下では <strong>立法府議長（1867-1870）</strong>。1864年に <strong>「鉄鋼業組合（Comité des Forges）」を創設・初代会長</strong> ── 20世紀フランス産業政治の中心団体。エッフェル塔の72人の名前にも刻まれている。</p>
+<h4 id="1840-1898">アンリ・シュナイダー（1840-1898）── 「過渡期の管理者」</h4>
+<p>ウジェーヌ1世の息子。1875継承、1889-1898下院議員。1889年に英国鉄鋼協会のベッセマー金メダル受賞 ── 技術者として国際的評価が高い。1887年に息子（ウジェーヌ2世）をパートナーに引き上げ、世代継承を計画的に実行。</p>
+<h4 id="21868-1942">ウジェーヌ・シュナイダー2世（1868-1942）── 「国際化と貴族化」の経営者</h4>
+<p>「軍需企業シュナイダー」の顔として最も重要。1898年（30歳）で全権継承。<br />
+- <strong>発明家としての顔</strong>：1901-1910年に <strong>米国で5件の軍事特許</strong>（駐退機、照準装置、装填装置、閉鎖機構）を本人名義で取得。<strong>技術者経営者</strong> という点でアルフレート・クルップに類似。<br />
+- <strong>国際栄誉</strong>：英国鉄鋼協会会長（1917-1919）、ジョン・フリッツ・メダル（1922）、ベッセマー金メダル（1930）。第一次大戦中の連合国産業協力の象徴的存在。<br />
+- <strong>政治</strong>：Action libérale populaire（中道右派・カトリック）で下院議員。ル・クルーゾー市長（1896-1900）。<br />
+- <strong>貴族との縁組</strong>：アントワネット・ド・ラフェリス・ド・サン=ソヴールと結婚し、アプルモン=シュル=アリエ城を取得。娘マリー=ゼリーは <strong>ブリサック公爵夫人</strong> に。「ブルジョア成り上がりの貴族化」の典型例。本社をパリへ移転（クルーゾーには工場と「君主」としての邸宅を残す）── 「ル・クルーゾーの伯爵」と揶揄されることもあった。</p>
+<h4 id="_16">経営文化 ── パテルナリスム</h4>
+<p>ル・クルーゾーは事実上の企業城下町：従業員住宅、学校、病院、教会、共済組合、消費協同組合、社員食堂までシュナイダー所有。工場長 <strong>エミール・シェイソン（Émile Cheysson）</strong> のもと、「<strong>核家族=社会の分子</strong>」思想に基づき、既婚男性世帯主を優先採用、独身者を排除。社員のブロック投票によりシュナイダー家候補者を選出させる仕組み。<strong>1899年5月29日、ル・クルーゾー全工場でゼネスト勃発</strong> ── フライス工シャルルーが賃金・労働条件への不満を組織化。ウジェーヌ2世の家父長的支配に対する正面からの挑戦であり、フランス労働運動史にも刻まれる事件。</p>
+<h3 id="11-3">11-3. シュナイダーのプロダクト</h3>
+<h4 id="_17">火砲</h4>
+<ul>
+<li><strong>カノン・ド・75 mle 1897（75mm野砲）</strong>：「世界初の本格的速射野砲」。<strong>油圧空気式駐退復進機構</strong> により毎分15-30発の連射が可能に。第一次大戦の仏軍主力野砲、米軍も「French 75」として大量採用。</li>
+<li><strong>カノン・ド・155 C mle 1917（155mm短砲身榴弾砲）</strong>：当初は <strong>帝政ロシア向け輸出設計</strong>（mle 1915 → 薬嚢式に変更したのが mle 1917）。戦時中約3,000門製造。仏・米・伊・ベルギー・ロシア、戦後はフィンランド（冬戦争で活躍）、ポーランド、ユーゴなど多国採用。<strong>「外国軍向け開発が自国軍主力に転用される」典型例</strong>。</li>
+<li><strong>カノン・ド・155 L mle 1917</strong>（長砲身カノン砲）、<strong>シュナイダー=ダンジェ系山砲</strong>（1907、ギリシャ陸軍ダンジェ大佐との共同設計）、対要塞用280mm列車砲。</li>
+<li>榴弾砲シリーズ（122mm、152mm、203mm、220mm、280mm）。</li>
+</ul>
+<h4 id="_18">装甲戦闘車両</h4>
+<ul>
+<li><strong>シュナイダーCA1（1916）</strong>：フランス初の戦車。米国ホルト・キャタピラトラクターのシャシを1915年1月に取得し、エミール・リマイユー大佐とブリリエ技師が設計。1916年9月初納入（英軍ソンム会戦でMk.I初投入と同月）。1917年4月シュマン・デ・ダーム攻勢で実戦初投入も、燃料タンクの脆弱性で大損害。</li>
+<li><strong>SOMUA S35（1935）</strong>：子会社 SOMUA 製の中戦車。47mm砲、傾斜装甲、当時の世界最高水準。1940年フランス戦役で「ドイツ戦車隊を質では凌駕したが運用で負けた」代表例。</li>
+</ul>
+<h4 id="_19">海軍兵器</h4>
+<p>大口径艦砲（305mm、340mm、380mm、ノルマンディー級・リシュリュー級戦艦等）。沿岸防衛砲・要塞砲、潜水艦（ローブフ式設計）。<strong>平時はこの海軍向け艦砲がル・クルーゾーの主力製品</strong>だった。</p>
+<h4 id="_20">二重用途品</h4>
+<p>1838年以降フランス初の本格的鉄道車両メーカー。橋梁・大型構造物、<strong>1877年のル・クルーゾー大蒸気ハンマー</strong> は重量物鍛造の象徴的装置。電機（20世紀以降）── これが戦後シュナイダーエレクトリックへと連なる脱軍需化の経路。</p>
+<h3 id="11-4">11-4. ポートフォリオ戦略の特徴</h3>
+<ol>
+<li><strong>「重い物・硬い物・精密な物」をワンストップで作る垂直統合</strong>（鉱石→鋼→装甲・砲身→機構→完成兵器）。</li>
+<li><strong>輸出契約から自国軍向け制式採用へ逆流させる開発モデル</strong>（155mm Mle 1917、シュナイダー=ダンジェ山砲）。</li>
+<li><strong>民需と軍需の両建て</strong>（機関車・橋梁・電機が平時の収益を支え、有事に軍需へ転換）。</li>
+</ol>
+<p>Krupp の「鋼塊→大砲」一本足、Vickers の「造船→艦砲」海軍特化と並べると、<strong>シュナイダー＝陸軍指向＋多角化型</strong> という独自の位置を占める。</p>
+<h3 id="11-5">11-5. 推奨参考文献</h3>
+<ul>
+<li>Claude Beaud, <em>Schneider en Russie 1896-1914</em>（ロシア展開研究）</li>
+<li><strong>Tristan de la Broise &amp; Félix Torres</strong>, <em>Schneider, l'histoire en force</em> (1996) ── 社史的決定版</li>
+<li>Agnès d'Angio, <em>Schneider &amp; Cie et les travaux publics 1895-1949</em></li>
+<li>一次資料：<strong>Académie François Bourdon（ル・クルーゾーのシュナイダー文書館）</strong> が膨大な企業史料を所蔵・公開</li>
+</ul>
+<hr />
+<h2 id="12">12. クルップ家四代の人物史 ── 第一次大戦まで</h2>
+<p>クルップが他の軍需企業と決定的に違うのは、<strong>「家族の物語そのものがドイツ近代史の縮図」</strong> になっている点。四代を順に深く見る。</p>
+<h3 id="12-1-alfred-krupp1812-1887-der-kanonenkonig">12-1. アルフレート・クルップ Alfred Krupp（1812-1887）── 「大砲王 <em>Der Kanonenkönig</em>」</h3>
+<h4 id="_21">貧困からの出発</h4>
+<p>1812年4月26日エッセン生まれ。父フリードリヒ・クルップ（1787-1826）は1811年に鋳鋼工場を作ったが失敗者として死去。<strong>14歳で父を喪い</strong>、学校を中退してほぼ瀕死の工場を継承（従業員7名、生産ほぼ停止、負債1万ターラー、一家は親戚の家に同居）。法的所有者は母親、実質経営者はアルフレート ── <strong>「ほぼ廃業の家業を強引に再建した叩き上げ」</strong> であり、後のパテルナリスムの内的論理（「私がいなければ皆死んでいた」）の源泉。</p>
+<h4 id="_22">技術的ブレークスルー</h4>
+<p>父が遺した <strong>鋳鋼（Tiegelstahl）の秘伝製法</strong> が唯一の資産。<strong>1851年ロンドン万博</strong> で当時世界最大4,300ポンド（約1,950kg）の鋳鋼インゴットを展示。同年、<strong>継ぎ目なし鉄道車輪（Radreifen）の特許</strong> ── これがクルップのロゴ「<strong>三つの輪</strong>」の由来。同じ1851年、装飾品名目で鋳鋼後装砲をプロイセン国王に献上。当初軍は青銅前装砲に固執して採用せず、<strong>国王の弟ヴィルヘルム（後の皇帝ヴィルヘルム1世）</strong> だけが価値を理解。1859年摂政就任後、312門を一括発注、ここからクルップは軍需企業となる。</p>
+<h4 id="_23">「ドイツ統一は鋳鋼が成し遂げた」</h4>
+<p>普墺戦争（1866）、普仏戦争（1870-71）で <strong>クルップ鋳鋼後装砲がフランスの青銅前装砲を圧倒</strong>。ナポレオン3世はクルップ砲の購入を支持したが、フランス軍上層部が拒否 ── これがフランス敗北の戦略的要因の一つと言われ、シュナイダーの軍需化を逆に促した皮肉な構造。アルフレート死去（1887）時、<strong>24,576門の砲</strong> を製造済：ドイツ向け10,666門、<strong>輸出13,910門（半数以上が輸出）</strong>。生涯顧客 <strong>46カ国</strong> ── クルップは最初から「ナショナル兵器廠であると同時にグローバル兵器商」だった。</p>
+<h4 id="generalregulativ1872">「Generalregulativ（一般規約）」1872年</h4>
+<p>1872年、エッセンの工場が巨大化して一人の人間が見渡せなくなったことを認め、<strong>会社の憲法として『Generalregulativ』</strong> を制定。1960年代まで実際に使われ続けた驚異的な長寿文書。第1条：「<strong>常に卓越し、可能な限り完全であること</strong>」。長子相続制の単独所有原則、職階・規律・忠誠宣誓を規定。労働者は <strong>「トイレに行くにも職長の書面許可」</strong> が必要。<strong>第13条：従業員の改善提案制度</strong> ── 後の「提案制度／カイゼン」の祖型。</p>
+<h4 id="kruppianer">パテルナリスム「Kruppianer」</h4>
+<p>1861年頃から <strong>住宅コロニー</strong> 建設開始、1905年時点で400戸（寡婦には家賃無料貸与）。<strong>Konsum-Anstalt</strong>（消費組合、1868）、<strong>Ménage</strong>（独身者寮、1865、最大1000名収容）、浴場、医療、災害・生命・疾病保険。対価は <strong>政治活動の禁止と忠誠宣誓</strong>。労働者は「ドイツ国民」である前に「<strong>Kruppianer（クルップの民）</strong>」であることを求められた。<strong>ビスマルクはこれを国家政策化</strong> ── 1883疾病保険法、1884災害保険法、1889廃疾老齢保険法という「ビスマルク社会立法」の青写真がクルップ福祉。学術的にはこの系譜が <strong>ナチ期の「指導者原理（Führerprinzip）」</strong> にまで連続する、と論じられる（William Manchester）。</p>
+<h4 id="_24">性格 ── 偏執的天才</h4>
+<ul>
+<li><strong>強迫性ワーカホリック</strong> であると同時に <strong>重度の心気症と鬱</strong>、数週間ベッドから起きないことも。</li>
+<li>269室のヴィラ・ヒューゲルを持ちながら、<strong>「人を椅子に座らせたふりをして体重を量る秘密の秤」</strong> を備えた工場隣の小屋 <strong>「シュタムハウス（Stammhaus）」</strong> を好んで使用。</li>
+<li><strong>1865年、プロイセン国王からの貴族叙位を辞退</strong>：「クルップという名で十分」。「皇帝の臣下ではなく対等な客先ベンダー」という独特の自意識。</li>
+<li>ヴィルヘルム1世は <strong>アルフレートの設計を採用しない陸軍大臣を3人連続で更迭</strong>、皮肉まじりに「3人の陸相を切ってもまだ分からんのか！」と嘆いた逸話。</li>
+<li>晩年は <strong>極右・反ユダヤ・反社会主義の暴言</strong>：「反革命を起こす男が現れるべきだ」と書き残し、後にひ孫の世代から「ヒトラーを予言していた」と引用されることに。</li>
+</ul>
+<h4 id="villa-hugel1870-1873">ヴィラ・ヒューゲル Villa Hügel（1870-1873建造）</h4>
+<p>アルフレート自身のスケッチに基づく、269室・延床8,100m²・庭園28haの巨邸。装飾を排した実用主義：二重窓、温水暖房、<strong>部屋ごとに温度独立調整できる初期空調</strong>、防火構造。妻ベルタ（同名の祖母）は工業煤煙のエッセンを嫌い、ほとんどヴィラ・ヒューゲルに住まなかった ── 夫婦関係は冷え切っていた。</p>
+<h4 id="1873">1873年金融危機と国家救済</h4>
+<p>1873年大恐慌で過剰拡張が破綻寸前 → <strong>プロイセン国営銀行を介した銀行団から3000万マルクの救済融資</strong>。「<strong>国家＝企業の一体性</strong>」が制度的に確立した瞬間で、これ以降クルップは "too big to fail" の典型に。</p>
+<h3 id="12-2-friedrich-alfred-krupp1854-1902-fak">12-2. フリードリヒ・アルフレート・クルップ Friedrich Alfred Krupp（1854-1902）── 「FAK」</h3>
+<p>クルップ家のなかで最も悲劇的、かつ最も興味深い人物。</p>
+<h4 id="_25">父親との対比</h4>
+<p>1854年エッセン生まれ、<strong>慢性喘息</strong> に終生苦しんだ虚弱な体質。父アルフレートの無慈悲な商売一徹とは対照的に、<strong>自然科学・海洋学・芸術</strong> への関心が強い知識人気質。父は当初「息子では商売は無理だ」と判断、<strong>甥への会社継承を真剣に検討</strong> していた。1887年、父の死により33歳で継承。</p>
+<h4 id="_26">経営戦略の転換</h4>
+<p>父の時代は「鉄道車輪と砲の二本柱、米国市場が大きい」モデル → FAKは米国鉄道市場の競争激化を見て <strong>軍需＝特にドイツ海軍へのシフト</strong> を断行。これが <strong>ティルピッツ提督の海軍拡張政策（1898/1900海軍法）と完全同期</strong> し、ドイツの世界政策（Weltpolitik）の物質的基盤に。<br />
+- <strong>1896年 ゲルマニア造船所（Germaniawerft, キール）買収</strong> ── これでクルップは「鋼→艦砲→軍艦」一貫生産体制を完成。後のUボート時代の基礎。<br />
+- <strong>1893年 グルーゾン社（Gruson, マグデブルク）買収</strong> ── 装甲砲塔と硬化鋳鉄の独自技術を吸収。<br />
+- ニッケル鋼、ディーゼル機関などの <strong>技術革新の体系化</strong> ── この時期のクルップは単なる兵器メーカーから総合重工コンツェルンへと脱皮。</p>
+<h4 id="_27">政治的役割</h4>
+<p><strong>1893-1898 帝国議会議員（自由保守党 Freikonservative Partei）</strong>、プロイセン貴族院、枢密院。ヴィルヘルム2世との <strong>個人的親密関係</strong> ── 皇帝は頻繁にヴィラ・ヒューゲルに泊まる。</p>
+<h4 id="_28">カプリ島と科学者としての顔</h4>
+<p>1898年以降、毎年数か月を <strong>イタリア・カプリ島</strong> で過ごす。海洋学への純粋な熱意：2艘のヨット「<strong>マヤ（Maya）</strong>」「<strong>ピューリタン（Puritan）</strong>」を所有、ナポリ海洋ステーションの <strong>アントン・ドールン</strong>、地元学者 <strong>イグナツィオ・チェリオ</strong> らと深い交友。<strong>新種の深海生物を発見・命名</strong> するなど、アマチュアの域を超えた業績。</p>
+<h4 id="1902">スキャンダルと死（1902年）</h4>
+<p>1902年11月15日、社会民主党機関紙 <strong>『Vorwärts（前進）』</strong> がカプリ島での <strong>同性愛行為</strong> を一面で暴露。相手として18歳の床屋兼アマチュア音楽家 <strong>アドルフォ・スキアーノ</strong> らの名を挙げ、ドイツ刑法175条違反（同性愛行為への重労働刑）を示唆。妻マルガレーテは1902年10月に <strong>匿名の脅迫状と写真</strong> を受け取り、皇帝に保護を求めたが、皇帝は対応せず、<strong>FAKは妻を精神病院に強制収容</strong> ── 信じがたい対応。<strong>11月22日、暴露からわずか7日後に死去</strong>（48歳）、公式発表「心臓発作」、実態は <strong>自殺が濃厚</strong>。葬儀でヴィルヘルム2世自ら追悼演説、社会民主党を「中傷者」として攻撃 ── 皇帝が一私企業オーナーのために政治演説を行うこと自体、クルップ＝帝国の一体性を象徴。</p>
+<h4 id="_29">歴史的意義</h4>
+<p>ティルピッツ海軍拡張＝英独建艦競争 → 第一次大戦の戦略構造を、企業側から物質的に支えた人物。同時に「ヴィルヘルム期ドイツの抑圧的性規範と国家＝企業癒着の闇」を最も赤裸々に示す事例として、ジェンダー史・セクシュアリティ史の研究対象でもある。</p>
+<h3 id="12-3-bertha-krupp1886-1957-16">12-3. ベルタ・クルップ Bertha Krupp（1886-1957）── 「16歳で帝国を継いだ少女」</h3>
+<h4 id="_30">突然の継承</h4>
+<p>1886年3月29日エッセン生まれ。父FAKと母マルガレーテ（旧姓フォン・エンデ男爵令嬢）の長女、妹バルバラ（後にヴィルモフスキー男爵夫人）。<strong>16歳で父を喪い、巨大なクルップ財閥の唯一の相続人</strong> に。妹バルバラは多額の現金遺贈で相続権を引き渡し。「<strong>女性が兵器コンツェルンを率いるのは不適切</strong>」という当時の社会観念から、<strong>ヴィルヘルム2世自身が婿探しを主導</strong>。</p>
+<p>※ よく言われる「Lex Krupp（クルップ法）」は <strong>1943年にヒトラーが出した別の法令</strong> で、ベルタ相続時のものではない。ベルタ相続自体は通常の遺言・相続手続きで行われ、社会的・象徴的後見人として皇帝が機能した、というのが正確。</p>
+<h4 id="1906">1906年の世紀の結婚式</h4>
+<p><strong>1906年10月15日</strong>、外交官 <strong>グスタフ・フォン・ボーレン・ウント・ハルバッハ</strong> と結婚。式に皇帝臨席、その場で「<strong>グスタフはクルップ姓を継承して良い</strong>」と勅命。これにより「フォン・ボーレン・ウント・ハルバッハ＝クルップ」という長い姓が誕生。法的所有者はベルタ単独、経営権は夫グスタフが代行という統治構造。</p>
+<h4 id="_31">「ビッグ・ベルタ」命名の経緯</h4>
+<p>第一次大戦勃発と同時にクルップが製造していた <strong>42cm攻城臼砲（M-Gerät）</strong> が、<strong>1914年8月、リエージュ要塞攻撃</strong>（特にポンティス堡塁、ロンサン堡塁の破壊）で投入されたとき、<strong>ドイツ兵が「Dicke Bertha（でぶのベルタ）」と愛称</strong> したことが命名の起源。ベルタ本人は設計にも製造にも関与なし ── しかし、<strong>世界軍事史に「Big Bertha」として彼女の名が刻まれる</strong> 皮肉。実際の42cm臼砲は重量42.6トン、口径420mm、高さ4.5m、12門のみ製造。リエージュ攻略はドイツ侵攻シュリーフェン計画の要石であり、彼女の名は <strong>第一次大戦最大の象徴兵器</strong> と直結。</p>
+<h4 id="_32">人格と立場</h4>
+<p>派手な経営介入をせず、「クルップ家の伝統と威信の保持者」として振る舞った。後年（ナチ期）、夫グスタフが熱烈なヒトラー支持者となるのに対し、<strong>ベルタはヒトラーを内心嫌悪</strong>、彼を「<strong>あの方（jener Herr）</strong>」と呼んで、1934年のヒトラー公式訪問の際は「病気」を理由に <strong>会わずに娘イルムガルトに接待を任せた</strong> 逸話あり。8人の子（うちアルフリート、クラウス、ベルトホルト、ハラルト、エックベルト、イルムガルト、ヴァルトラウト、アーノルド〔幼児死亡〕）。長男アルフリートのみが「クルップ」姓、他は「フォン・ボーレン・ウント・ハルバッハ」姓。</p>
+<h3 id="12-4-gustav-krupp1870-1950">12-4. グスタフ・クルップ・フォン・ボーレン・ウント・ハルバッハ Gustav Krupp（1870-1950）</h3>
+<h4 id="_33">出自 ── クルップとは縁もゆかりもなかった</h4>
+<p><strong>1870年8月7日、ハーグ生まれ</strong>。父グスタフ・ボーレン・ウント・ハルバッハは <strong>アメリカ生まれ</strong>（祖先がペンシルベニア独立戦争に参戦）、母ソフィー旧姓ボーレン。18歳で <strong>第2バーデン竜騎兵連隊に志願</strong>、その後ローザンヌ・ストラスブール・ハイデルベルクで法学。<strong>職業外交官</strong>：1899ワシントン公使館書記官、北京公使館書記官、<strong>1904ヴァチカン駐在プロイセン公使館へ転任 → ローマでベルタと初対面</strong>。</p>
+<h4 id="_34">皇帝に選ばれた婿</h4>
+<p>ヴィルヘルム2世が「ベルタの夫＝クルップ社の代理経営者」に求めた条件：名門家系で皇帝の意思を理解、軍人精神（竜騎兵経験）、法律と外交で訓練、野心がありすぎず <strong>国家への忠誠と従順</strong> を内面化していること。グスタフはこの要件にぴったり。義弟ヴィルモフスキー男爵の証言：「<strong>彼は国家の権威に自分を従属させる、極めて明確な性向を持っていた。忠誠が彼の最も貴い徳だった</strong>」。</p>
+<h4 id="_35">パーソナリティ ── 「精密機械のような家長」</h4>
+<ul>
+<li><strong>強迫的几帳面さ</strong>：邸内温度を自分好みの低温に保つ、食事は秒単位で進行（速食派）、書類管理は鉄壁。</li>
+<li><strong>想像力に欠けるが精力的</strong> な経営者 ── 戦略的ビジョンは政府の方針に従い、「皇帝・国家の意向を会社に反映する執行装置」に徹した。</li>
+<li>1909年からは社長／実質CEO。アルフレートのカリスマも、FAKの科学的好奇心もなく、「<strong>忠実な企業官僚としての所有者</strong>」という新しいタイプ。</li>
+</ul>
+<h4 id="_36">第一次大戦前夜のクルップ</h4>
+<ul>
+<li><strong>海軍拡張（ティルピッツ・プラン）の物質的支柱</strong>、ゲルマニア造船所で戦艦・巡洋戦艦・潜水艦Uボートを量産。</li>
+<li>1912年 <strong>「クルップ事件 Kornwalzer-Affäre」</strong>：クルップ社員が陸軍省の機密情報を <strong>賄賂で入手</strong> していたスキャンダルが帝国議会で追及され、社民党を中心に「軍需業界と国家の癒着」が問題化。グスタフ自身は議会で釈明に追われ、<strong>戦前ドイツの「死の商人」批判の原型</strong> となった事件。</li>
+<li>1914年大戦勃発時、クルップは <strong>従業員約8万人、世界最大級の単一企業</strong>。</li>
+</ul>
+<h3 id="12-5-1914">12-5. 1914年のクルップ ── 四代の到達点</h3>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>従業員</td>
+<td>エッセン本社で約8万人、グループ全体で十数万</td>
+</tr>
+<tr>
+<td>製品系列</td>
+<td>砲（野砲〜420mm臼砲）、艦砲、装甲板、軍艦、Uボート、機関車、レール、橋梁、鋼</td>
+</tr>
+<tr>
+<td>経営構造</td>
+<td>単独所有制（ベルタ）＋皇帝が選んだ婿（グスタフ）が経営代行</td>
+</tr>
+<tr>
+<td>国家との関係</td>
+<td>皇帝・海軍省・陸軍省と人的に一体化、戦時下では事実上の国家計画機関</td>
+</tr>
+<tr>
+<td>国際展開</td>
+<td>戦前は46カ国に輸出、戦時は同盟国（オーストリア=ハンガリー、オスマン、ブルガリア）への技術供与</td>
+</tr>
+<tr>
+<td>労働制度</td>
+<td>Generalregulativ（1872）が依然有効、Kruppianerの忠誠宣誓制度</td>
+</tr>
+<tr>
+<td>象徴兵器</td>
+<td>42cm M-Gerät「ビッグ・ベルタ」（1914、12門製造、リエージュ・ナミュール・アントワープ・ヴェルダンで投入）／38cm SK L/45「ランゲ・マックス」（1916）／<strong>「パリ砲（Paris-Geschütz）」</strong>（1918、砲身長34m、射程約130km、世界初の成層圏到達兵器、3月23日初射でパリを110km先から砲撃）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-6">12-6. 四代を貫く構造論</h3>
+<table>
+<thead>
+<tr>
+<th>世代</th>
+<th>人物</th>
+<th>類型</th>
+<th>国家との関係</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1代目</td>
+<td>アルフレート</td>
+<td>発明家＝家父長</td>
+<td>国王の客（独立性を保つ）</td>
+</tr>
+<tr>
+<td>2代目</td>
+<td>フリードリヒ・アルフレート</td>
+<td>科学者＝政治家</td>
+<td>皇帝の戦略的パートナー</td>
+</tr>
+<tr>
+<td>3代目</td>
+<td>ベルタ</td>
+<td>象徴的所有者</td>
+<td>皇帝の被後見人</td>
+</tr>
+<tr>
+<td>4代目</td>
+<td>グスタフ</td>
+<td>皇帝の婿＝執行人</td>
+<td>国家への完全な従属</td>
+</tr>
+</tbody>
+</table>
+<p>ここに見える歴史的力学：</p>
+<ol>
+<li><strong>「カリスマの薄まり」と「国家との一体化の深まり」が反比例</strong>。アルフレートの個人的天才性は、世代を経るごとに国家機構との一体化＝官僚化に置き換わる。</li>
+<li><strong>「同族原理」が単独所有制（Generalregulativ）として制度化されている</strong> ため、女性相続（ベルタ）でも夫を「クルップ」化することで継承される ── <strong>血より名前と機構が重視される独特の家族企業形態</strong>。</li>
+<li>皇帝個人との人格的紐帯（アルフレート←ヴィルヘルム1世、FAK・ベルタ・グスタフ←ヴィルヘルム2世）が、<strong>英国型「国家＝市場関係」、フランス型「政商関係」と質的に異なる「臣下的関係」</strong> を形作る。</li>
+<li>この「国家と一体化した同族企業」モデルが、ナチ期に「総統と一体化した同族企業」モデルへ滑らかに移行する素地となる ── <strong>1933年以降のクルップ＝ナチス癒着は、1887年来の構造の論理的帰結であり、思想的転向ではなく構造的継承</strong>。</li>
+</ol>
+<h3 id="12-7">12-7. 推奨参考文献</h3>
+<ul>
+<li>William Manchester, <em>The Arms of Krupp 1587-1968</em> (1968) ── 一族史の古典、文学的かつ詳細</li>
+<li><strong>Harold James</strong>, <em>Krupp: A History of the Legendary German Firm</em> (2012) ── 最新の学術的決定版</li>
+<li>Lothar Gall, <em>Krupp: Der Aufstieg eines Industrieimperiums</em> (2000)</li>
+<li>Diana Maria Friz, <em>Margarethe Krupp</em> ── FAKの妻の伝記、家族史の裏面</li>
+</ul>
+<hr />
+<h2 id="13">13. 欧州三大軍需企業の比較検討</h2>
+<p>セクション7-9（ヴィッカース／アームストロング）、11（シュナイダー）、12（クルップ）の総合的比較。</p>
+<h3 id="13-1">13-1. 創業・転身パターン</h3>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>クルップ</th>
+<th>シュナイダー</th>
+<th>ヴィッカース</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>出自</td>
+<td>商人→製鋼（1587/1811）</td>
+<td>製鉄・鉄道（1836）</td>
+<td>製鋼（1828）</td>
+</tr>
+<tr>
+<td>軍需転身</td>
+<td>1840s（大砲）</td>
+<td>1870s（普仏戦後）</td>
+<td>1888（装甲）/1890（砲）</td>
+</tr>
+<tr>
+<td>軍需化の動機</td>
+<td>鋳鋼品質の証明</td>
+<td>国家独占契約と市場拡大</td>
+<td>海軍向け艦砲市場の発見</td>
+</tr>
+</tbody>
+</table>
+<p><strong>共通点</strong>：三社とも「鉄鋼会社が軍需に拡張した」パターン。<strong>最初から武器商人だった企業は一社もない</strong>。19世紀後半の冶金技術革新（鋳鋼・大型鍛造）と砲身材料革命が、鉄鋼会社を軍需化させた構造的要因。</p>
+<h3 id="13-2">13-2. 経営形態 ── 三類型</h3>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>該当社</th>
+<th>特徴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>同族所有・カリスマ家父長型</strong></td>
+<td>クルップ</td>
+<td>5代にわたる家族支配、皇帝・総統の私的延長</td>
+</tr>
+<tr>
+<td><strong>同族支配・政商貴族化型</strong></td>
+<td>シュナイダー</td>
+<td>3代の家族支配、政界・貴族との縁組、フランス的混合型</td>
+</tr>
+<tr>
+<td><strong>株式会社・専門経営型</strong></td>
+<td>ヴィッカース</td>
+<td>早期に専門経営者化、「家」より「個人」（ザハロフ）が突出</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-3">13-3. 国家との関係</h3>
+<ul>
+<li><strong>クルップ</strong>：「<strong>皇帝の私的兵器廠</strong>」モデル。国家＝企業の一体化が最も強い。</li>
+<li><strong>シュナイダー</strong>：「<strong>政商＋多元的調達体制</strong>」モデル。国内では Saint-Chamond らと競争、政治・金融でロビイング。</li>
+<li><strong>ヴィッカース</strong>：「<strong>契約と市場</strong>」モデル。英国の発注分散主義のもと、Armstrong、Beardmore と競争しつつ、海外市場で活路。</li>
+</ul>
+<h3 id="13-4">13-4. 国際展開</h3>
+<table>
+<thead>
+<tr>
+<th>観点</th>
+<th>クルップ</th>
+<th>シュナイダー</th>
+<th>ヴィッカース</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>顧客の地理的多様性</td>
+<td>46カ国（19世紀末）</td>
+<td>中欧・地中海・南米</td>
+<td>全世界（日・露・トルコ・南米）</td>
+</tr>
+<tr>
+<td>海外子会社網</td>
+<td>ボフォース（隠れ蓑）</td>
+<td>シュコダ（買収）、ロシア・ポーランド</td>
+<td>カナダ、伊、チェコ、トルコ等</td>
+</tr>
+<tr>
+<td>「死の商人」言説の主役度</td>
+<td>高（ナチス期で決定的）</td>
+<td>中（中欧投資網が問題視）</td>
+<td>最高（ザハロフによる象徴化）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-5">13-5. パテルナリスム比較</h3>
+<ul>
+<li><strong>クルップ＝エッセン</strong>：1860年代から <strong>企業福祉国家</strong>（住宅、共済、購買、年金、医療）。労働者の <strong>忠誠宣誓と政治禁止</strong> が条件。<strong>ビスマルク社会立法のモデル → 後にナチスの「指導者原理」へ影響</strong>。</li>
+<li><strong>シュナイダー＝ル・クルーゾー</strong>：エミール・シェイソンの「核家族＝社会の分子」思想、ブロック投票による政治支配。1899年大ストライキで動揺。</li>
+<li><strong>ヴィッカース＝シェフィールド／バロー</strong>：英国型労使関係（労働組合との交渉）に従属。<strong>企業城下町化はクルップ・シュナイダーほど徹底しなかった</strong>。</li>
+</ul>
+<p>→ <strong>大陸型（クルップ・シュナイダー）= 全人格的支配 vs 英国型（ヴィッカース）= 契約的労使関係</strong> の対照がそのまま現れる。</p>
+<h3 id="13-6">13-6. 製品ポートフォリオ比較</h3>
+<table>
+<thead>
+<tr>
+<th>分野</th>
+<th>クルップ</th>
+<th>シュナイダー</th>
+<th>ヴィッカース</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>陸軍野砲・榴弾砲</td>
+<td>●●●</td>
+<td>●●●</td>
+<td>●●</td>
+</tr>
+<tr>
+<td>戦車</td>
+<td>●●（WWII世代）</td>
+<td>●●（CA1、SOMUA）</td>
+<td>●●●（6トン、ヴァレンタイン）</td>
+</tr>
+<tr>
+<td>小火器・機関銃</td>
+<td>●</td>
+<td>─</td>
+<td>●●●（ヴィッカース機関銃）</td>
+</tr>
+<tr>
+<td>艦砲・装甲</td>
+<td>●●●</td>
+<td>●●</td>
+<td>●●●</td>
+</tr>
+<tr>
+<td>艦艇建造</td>
+<td>●●（ゲルマニア）</td>
+<td>●（限定）</td>
+<td>●●●（バロー）</td>
+</tr>
+<tr>
+<td>潜水艦</td>
+<td>●●（Uボート）</td>
+<td>●（ローブフ式）</td>
+<td>●●●（英海軍主要建造元）</td>
+</tr>
+<tr>
+<td>航空機</td>
+<td>─</td>
+<td>─</td>
+<td>●●●（FB5、Vimy、Wellington）</td>
+</tr>
+<tr>
+<td>民需（鉄道・橋梁・電機）</td>
+<td>●●</td>
+<td>●●●（→Schneider Electric）</td>
+<td>●●</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>クルップ</strong>：「重い・硬い・撃つ」（陸軍砲＋艦砲＋Uボート＋鋼）に集中。</li>
+<li><strong>シュナイダー</strong>：最も多角化（陸軍砲＋艦砲＋戦車＋電機）。</li>
+<li><strong>ヴィッカース</strong>：唯一の <strong>陸海空＋小火器</strong> 全ドメイン企業、特に <strong>航空機</strong> はクルップ・シュナイダーが入れなかった独自領域。</li>
+</ul>
+<h3 id="13-7">13-7. 戦後の運命</h3>
+<table>
+<thead>
+<tr>
+<th>企業</th>
+<th>1945年以降</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>クルップ</td>
+<td>戦犯・解体命令 → 1951復活 → 1999 ThyssenKrupp 合併 → 現存（鉄鋼・産業財）</td>
+</tr>
+<tr>
+<td>シュナイダー</td>
+<td>平和裏に脱軍需化 → 1969 Empain 買収 → <strong>1999 Schneider Electric</strong>（電機専業）</td>
+</tr>
+<tr>
+<td>ヴィッカース</td>
+<td>1960航空部門 BAC へ、1977造船・航空国有化 → 1999 Rolls-Royce／BAE Systems が分割吸収</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三社とも1999年前後に「軍需企業」としてのアイデンティティを失った</strong> のは、冷戦終結後の欧州軍需再編（EADS/BAE/Thales等）と整合する。</p>
+<h3 id="13-8">13-8. 学術研究上の論点</h3>
+<ol>
+<li><strong>「死の商人」言説の妥当性</strong> ── 三社の戦争責任は本当に主体的か、それとも国家政策の道具か。ザハロフのような個人を強調しすぎる傾向への批判（Trebilcock, Spear など）。</li>
+<li><strong>国家＝企業関係の三類型</strong> ── 独「一体化」、仏「政商」、英「契約」のどれが最も持続的だったか。</li>
+<li><strong>戦間期国際カルテル</strong> ── シュナイダー＝シュコダ、クルップ＝ボフォース、ヴィッカース＝各国合弁の競合関係。</li>
+<li><strong>パテルナリスムとファシズム親和性</strong> ── クルップ→ナチス、シュナイダー→ヴィシー協力（ウジェーヌ2世は1942没、息子はヴィシー期に微妙な立場）に対し、ヴィッカースが民主主義体制下にとどまった理由。</li>
+<li><strong>戦後の脱軍需化経路</strong> ── 三社とも生き残ったが、軍需アイデンティティを失った過程の比較。</li>
+</ol>
+<h3 id="13-9">13-9. 比較研究の枠組み ── 「国家・企業・個人の三層分析」</h3>
+<table>
+<thead>
+<tr>
+<th>重心</th>
+<th>該当企業</th>
+<th>象徴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>国家</strong></td>
+<td>クルップ</td>
+<td>皇帝・総統と一体化した同族企業</td>
+</tr>
+<tr>
+<td><strong>企業（家）</strong></td>
+<td>シュナイダー</td>
+<td>政商として国家機構に食い込むダイナスティ</td>
+</tr>
+<tr>
+<td><strong>個人</strong></td>
+<td>ヴィッカース</td>
+<td>バジル・ザハロフという超国家的セールスマン</td>
+</tr>
+</tbody>
+</table>
+<p>この三層の重心の置き方が、各社の軍需資本主義としての性格を決定づける。日本軍需産業との対比（§10）でも、日本には三層のいずれも欠けている（強いて言えば「<strong>国家</strong>」のみ）ことが浮かび上がる。</p>
+<h3 id="13-10">13-10. 推奨参考文献（三社比較研究）</h3>
+<ul>
+<li><strong>Clive Trebilcock</strong>, <em>The Vickers Brothers: Armaments and Enterprise, 1854-1914</em> (1977) ── 古典、三社比較の出発点</li>
+<li><strong>Joanna Spear</strong>, <em>The Business of Armaments: Armstrongs, Vickers and the International Arms Trade, 1855-1955</em> (Cambridge UP, 2024) ── 最新の英軍需史</li>
+<li><strong>William Manchester</strong>, <em>The Arms of Krupp</em> (1968)／<strong>Harold James</strong>, <em>Krupp</em> (2012)</li>
+<li><strong>Tristan de la Broise &amp; Félix Torres</strong>, <em>Schneider, l'histoire en force</em> (1996)</li>
+<li>Engelbrecht &amp; Hanighan, <em>Merchants of Death</em> (1934) ── 一次資料的論争文献</li>
+<li><strong>David Stevenson</strong>, <em>Armaments and the Coming of War: Europe 1904-1914</em> (1996) ── 三社を含む構造論</li>
+</ul>
+<h3 id="13-11-11-13">13-11. 出典（セクション11-13共通）</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Schneider-Creusot">Schneider-Creusot — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Eug%C3%A8ne_Schneider">Eugène Schneider — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Eug%C3%A8ne_Schneider_II">Eugène Schneider II — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Henri_Schneider">Henri Schneider — Wikipedia</a></li>
+<li><a href="https://www.creusotmontceautourisme.com/discover/le-creusot/a-factory-town-turned-empire/the-schneider-family/">The Schneider family — Creusot Montceau Tourist Office</a></li>
+<li><a href="https://revistes.ub.edu/index.php/HistoriaIndustrial/article/view/50926">Partnership and Competition: Schneider et Cie and Škoda Works in the Interwar Period — Revista de Historia Industrial</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Canon_de_155_C_mod%C3%A8le_1917_Schneider">Canon de 155 C modèle 1917 Schneider — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Schneider_CA1">Schneider CA1 — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Saint-Chamond_(tank)">Saint-Chamond (tank) — Wikipedia</a></li>
+<li><a href="https://shs.cairn.info/journal-le-mouvement-social1-2014-2-page-27?lang=en">Les trois âges du paternalisme — Cairn</a></li>
+<li><a href="https://www.cambridge.org/core/journals/comparative-studies-in-society-and-history/article/abs/industrial-paternalism-discourse-and-practice-in-nineteenthcentury-french-mining-and-metallurgy/05765B02A4E65B16F5B010E706BC93F2">Industrial Paternalism in 19th-Century French Mining and Metallurgy — Cambridge</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Krupp">Krupp — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Krupp_family">Krupp family — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Alfred_Krupp">Alfred Krupp — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Friedrich_Alfred_Krupp">Friedrich Alfred Krupp — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bertha_Krupp">Bertha Krupp — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gustav_Krupp_von_Bohlen_und_Halbach">Gustav Krupp von Bohlen und Halbach — Wikipedia</a></li>
+<li><a href="https://www.thyssenkrupp.com/en/company/history/the-founding-families/gustav-krupp-von-bohlen-und-halbach-and-bertha-krupp-von-bohlen-und-halbach.html">Bertha and Gustav Krupp — thyssenkrupp official site</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Villa_H%C3%BCgel">Villa Hügel — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Big_Bertha_(howitzer)">Big Bertha (howitzer) — Wikipedia</a></li>
+<li><a href="https://nat.museum-digital.de/object/608177?navlang=de">General-Regulativ für die Firma Fried. Krupp 1872 — museum-digital</a></li>
+<li><a href="https://www.cambridge.org/core/journals/business-history-review/article/abs/social-welfare-and-business-the-krupp-welfare-program-18601914/0461CACB8B1AB44C489D89B6F00453D0">Social Welfare and Business: The Krupp Welfare Program, 1860-1914 — Business History Review</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Basil_Zaharoff">Basil Zaharoff — Wikipedia</a></li>
+<li><a href="https://issforum.org/roundtables/h-diplo-rjissf-roundtable-15-37-on-spear-the-business-of-armaments">The Business of Armaments — H-Diplo Roundtable</a></li>
+</ul>
+    </main>
+</div>
+<script>
+const main = document.getElementById("main");
+const tocList = document.getElementById("toc-list");
+const headings = main.querySelectorAll("h2, h3");
+let counter = 0;
+headings.forEach(h => {
+    const id = "section-" + (counter++);
+    h.id = id;
+    const li = document.createElement("li");
+    li.className = h.tagName === "H3" ? "h3-item" : "";
+    const a = document.createElement("a");
+    a.href = "#" + id;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    tocList.appendChild(li);
+});
+main.querySelectorAll("p").forEach(p => {
+    if (p.textContent.trim().startsWith("→")) {
+        p.style.cssText = "background:#fff3cd;padding:8px 14px;border-left:3px solid #c9a000;border-radius:0 4px 4px 0;margin:16px 0;";
+    }
+});
+</script>
+</body>
+</html>
